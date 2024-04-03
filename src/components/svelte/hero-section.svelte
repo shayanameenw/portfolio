@@ -33,10 +33,10 @@ useSideEffect(() => {
 <section class="h-screen grid grid-cols-3">
   <article class="col-span-2 grid place-items-center">
     <h3 id="heading" class="overflow-hidden text-9xl">
-      <span class="block">
+      <span class="block opacity-0">
         Crafting
       </span>
-      <span class="block">
+      <span class="block opacity-0">
         future
       </span>
     </h3>

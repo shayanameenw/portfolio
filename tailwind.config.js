@@ -7,13 +7,7 @@ export default {
 		extend: {},
 	},
 
-	plugins: [
-		require("@tailwindcss/aspect-ratio"),
-		require("@tailwindcss/container-queries"),
-		require("@tailwindcss/forms"),
-		require("@tailwindcss/typography"),
-		require("rippleui"),
-	],
+	plugins: [require("rippleui")],
 
 	/** @type {import('rippleui').Config} */
 

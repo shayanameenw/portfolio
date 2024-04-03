@@ -28,10 +28,6 @@
 		"@astrojs/check": "npm:@astrojs/check@latest",
 		"@astrojs/tailwind": "npm:@astrojs/tailwind@latest",
 		"@biomejs/biome": "npm:@biomejs/biome@latest",
-		"@tailwindcss/aspect-ratio": "npm:@tailwindcss/aspect-ratio@latest",
-		"@tailwindcss/container-queries": "npm:@tailwindcss/container-queries@latest",
-		"@tailwindcss/forms": "npm:@tailwindcss/forms@latest",
-		"@tailwindcss/typography": "npm:@tailwindcss/typography@latest",
 		"tailwind": "npm:tailwindcss@latest",
 		"typescript": "npm:typescript@latest"
 	}
