@@ -37,7 +37,7 @@ useSideEffect(() => {
         Crafting
       </span>
       <span class="block">
-        future.
+        future
       </span>
     </h3>
   </article>

@@ -20,7 +20,7 @@ useSideEffect(() => {
   <aside id="sidebar" class="py-8 flex flex-col justify-between items-center">
     <MenuIcon />
     <h1 class="mb-4 -rotate-90 text-xl">
-      Zedsols
+      zedsols.
     </h1>
   </aside>
 </template>
