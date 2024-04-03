@@ -1,5 +1,6 @@
 ---
 import { ViewTransitions } from "astro:transitions";
+import { Sidebar } from "~/components/vue";
 
 interface Props {
 	title: string;
@@ -24,8 +25,10 @@ const { title, description } = Astro.props;
 
 		<ViewTransitions />
 	</head>
-	<body>
-    <main>
+	<body class="flex">
+		<Sidebar client:load />
+		<div class="m-0 h-screen divider divider-vertical"></div>
+    <main class="flex-1">
       <slot />
     </main>
 	</body>

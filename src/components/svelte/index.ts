@@ -1,1 +1,1 @@
-export {} from "~/components/svelte";
+export { default as HeroSection } from "~/components/svelte/hero-section.svelte";
