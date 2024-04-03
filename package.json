@@ -1,0 +1,38 @@
+{
+	"name": "@zedsols/portfolio",
+	"version": "1.0.0",
+	"license": "MIT",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"biome": "biome"
+	},
+	"dependencies": {
+		"@astrojs/svelte": "npm:@astrojs/svelte@latest",
+		"@astrojs/vercel": "npm:@astrojs/vercel@latest",
+		"@astrojs/vue": "npm:@astrojs/vue@latest",
+		"astro": "npm:astro@latest",
+		"gsap": "npm:gsap@latest",
+		"lucide": "npm:lucide@latest",
+		"lucide-svelte": "npm:lucide-svelte@latest",
+		"lucide-vue-next": "npm:lucide-vue-next@latest",
+		"nanostores": "npm:nanostores@latest",
+		"rippleui": "npm:rippleui@latest",
+		"svelte": "npm:svelte@next",
+		"vue": "npm:vue@latest"
+	},
+	"devDependencies": {
+		"@astrojs/check": "npm:@astrojs/check@latest",
+		"@astrojs/tailwind": "npm:@astrojs/tailwind@latest",
+		"@biomejs/biome": "npm:@biomejs/biome@latest",
+		"@tailwindcss/aspect-ratio": "npm:@tailwindcss/aspect-ratio@latest",
+		"@tailwindcss/container-queries": "npm:@tailwindcss/container-queries@latest",
+		"@tailwindcss/forms": "npm:@tailwindcss/forms@latest",
+		"@tailwindcss/typography": "npm:@tailwindcss/typography@latest",
+		"tailwind": "npm:tailwindcss@latest",
+		"typescript": "npm:typescript@latest"
+	}
+}
