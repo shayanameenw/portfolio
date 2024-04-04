@@ -1,5 +1,3 @@
-import { map } from "nanostores";
+import { atom } from "nanostores";
 
-export const menuStore = map({
-	open: false,
-});
+export const isMenuOpenStore = atom(false);

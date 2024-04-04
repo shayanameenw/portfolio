@@ -11,6 +11,19 @@ interface Props {
 const { title, description } = Astro.props;
 ---
 
+<script>
+import {isMenuOpenStore} from "~/stores/menu-store"
+
+isMenuOpenStore.listen((isMenuOpen) => {
+	const heroSection = document.querySelector("main section:first-child")
+
+	heroSection?.scrollIntoView()
+
+	document.body.style.height = isMenuOpen ? "100vh" : 'auto'
+	document.body.style.overflow = isMenuOpen ? "hidden" : 'auto'
+});
+</script>
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />

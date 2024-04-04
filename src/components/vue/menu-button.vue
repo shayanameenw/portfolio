@@ -2,12 +2,12 @@
 import { gsap } from "gsap";
 import { MenuIcon, XIcon } from "lucide-vue-next";
 import { useReactiveStore, useSideEffect } from "~/hooks/core.vue";
-import { menuStore } from "~/stores/menu-store";
+import { isMenuOpenStore } from "~/stores/menu-store";
 
-const menu = useReactiveStore(menuStore);
+const isMenuOpen = useReactiveStore(isMenuOpenStore);
 
 function toggleMenu() {
-	menu.value.open = !menu.value.open;
+	isMenuOpen.value = !isMenuOpen.value;
 }
 
 useSideEffect(() => {
@@ -15,7 +15,7 @@ useSideEffect(() => {
 
 	menuBtnTL.fromTo(
 		"#menu-btn",
-		{ opacity: 0, rotateZ: menu.value.open ? 90 : -90 },
+		{ opacity: 0, rotateZ: isMenuOpen.value ? 90 : -90 },
 		{ opacity: 1, rotateZ: 0 },
 	);
 });
@@ -23,7 +23,7 @@ useSideEffect(() => {
 
 <template>
   <button id="menu-btn" class="opacity-0" v-on:click="toggleMenu">
-    <XIcon v-if="menu.value.open" />
+    <XIcon v-if="isMenuOpen.value" />
 		<MenuIcon v-else/>
   </button>
 </template>

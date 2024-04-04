@@ -7,12 +7,28 @@ import { useSideEffect } from "~/hooks/core.vue";
 useSideEffect(() => {
 	gsap.registerPlugin(ScrollTrigger);
 
-	gsap.timeline({
-		defaults: {},
-		scrollTrigger: {
-			trigger: "#sidebar",
-			pin: true,
-		},
+	const mm = gsap.matchMedia();
+
+	mm.add("(min-width: 1024px)", () => {
+		gsap.timeline({
+			defaults: {},
+			scrollTrigger: {
+				trigger: "#sidebar",
+				pin: true,
+				end: () => {
+					const main = document.querySelector("main");
+					const heroSection = document.querySelector(
+						"main section:first-child",
+					);
+
+					if (main && heroSection) {
+						return `+=${main.clientHeight - heroSection.clientHeight}`;
+					}
+
+					return 0;
+				},
+			},
+		});
 	});
 });
 </script>
