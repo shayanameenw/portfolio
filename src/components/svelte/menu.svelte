@@ -2,6 +2,7 @@
 import { gsap } from "gsap";
 import { useReactiveStore, useSideEffect } from "~/hooks/core.svelte";
 import { menuStore } from "~/stores/menu-store";
+import { Logo } from "~/components/svelte";
 
 const menu = useReactiveStore(menuStore);
 
@@ -20,6 +21,6 @@ useSideEffect(() => {
 
 {#if menu.value.open}
   <section id="menu" class="grid place-items-center absolute z-10 top-0 left-0 right-0 h-screen bg-backgroundPrimary">
-    Hello, World!
+    <Logo />
   </section>
 {/if}
