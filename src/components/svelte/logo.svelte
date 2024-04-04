@@ -7,17 +7,17 @@ const LOGO = "zedsols";
 useSideEffect(() => {
 	const logoTL = gsap.timeline({ defaults: { stagger: 0.25 } });
 
-	logoTL.fromTo("h1 > span", { opacity: 0 }, { opacity: 1 });
+	logoTL.fromTo("#logo", { opacity: 0 }, { opacity: 1 });
 });
 </script>
 
-<h1 id="logo" class="font-medium text-xl">
+<h1 id="logo" class="opacity-0 font-medium text-xl">
   {#each LOGO.split("") as letter}  
-    <span class="opacity-0">
+    <span>
       { `${letter} ` }
     </span>
   {/each}
-  <span class="opacity-0 font-bold text-3xl text-teal-700">
+  <span class="font-bold text-3xl text-teal-700">
     .
   </span>
 </h1>
