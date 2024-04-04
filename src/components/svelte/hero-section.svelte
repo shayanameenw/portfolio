@@ -32,9 +32,9 @@ useSideEffect(() => {
 });
 </script>
 
-<section class="px-8 h-screen grid grid-cols-1 xl:grid-cols-3">
+<section class="px-8 h-screen overflow-hidden grid grid-cols-1 xl:grid-cols-3">
   <article class="col-span-2 grid place-items-center">
-    <h3 id="heading" class="overflow-hidden text-7xl md:text-9xl">
+    <h3 id="heading" class="text-7xl md:text-9xl">
       <span class="block opacity-0">
         Crafting
       </span>
