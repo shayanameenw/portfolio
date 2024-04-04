@@ -12,11 +12,11 @@ useSideEffect(() => {
 </script>
 
 <template>
-  <h1 id="logo" class="lg:mb-10 lg:-mx-12 lg:-rotate-90 text-xl">
-    <span v-for="letter in LOGO.split('')">
+  <h1 id="logo" class="lg:mb-10 lg:-mx-12 lg:-rotate-90 font-medium text-xl">
+    <span class="opacity-0" v-for="letter in LOGO.split('')">
       {{ `${letter} ` }}
     </span>
-    <span class="font-bold text-3xl text-teal-700">
+    <span class="opacity-0 font-bold text-3xl text-teal-700">
       .
     </span>
   </h1>

@@ -14,9 +14,6 @@ dependencies:
   '@astrojs/vue':
     specifier: npm:@astrojs/vue@latest
     version: 4.0.10(@babel/core@7.24.4)(astro@4.5.15)(vite@5.2.8)(vue@3.4.21)
-  '@fontsource/cookie':
-    specifier: ^5.0.18
-    version: 5.0.18
   astro:
     specifier: npm:astro@latest
     version: 4.5.15(typescript@5.4.3)
@@ -1002,10 +999,6 @@ packages:
     os: [win32]
     requiresBuild: true
     optional: true
-
-  /@fontsource/cookie@5.0.18:
-    resolution: {integrity: sha512-Hh2wLkYAj2/TOKDMH3GtVh08PKm73bQZZlupSFK3+xKM4+PJ/xJg89GTTlR5xvcSdKycemoVzCsnHQGR/ydqhw==}
-    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}

@@ -1,6 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import { Sidebar } from "~/components/vue";
+import { Menu } from "~/components/svelte";
 
 interface Props {
 	title: string;
@@ -27,8 +28,9 @@ const { title, description } = Astro.props;
 	</head>
 	<body class="flex flex-col lg:flex-row">
 		<Sidebar client:load />
-    <main class="flex-1">
-      <slot />
-    </main>
+    <main class="relative flex-1">
+			<Menu client:load />
+			<slot />
+		</main>
 	</body>
 </html>
