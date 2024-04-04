@@ -1,21 +1,24 @@
 <script setup lang='ts'>
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useSideEffect } from "~/hooks/core.vue";
 import { MenuButton, Logo } from "~/components/vue";
 
 useSideEffect(() => {
-	const mm = gsap.matchMedia();
+	gsap.registerPlugin(ScrollTrigger);
 
-	mm.add("(min-width: 1024px)", () => {
-		const sidebarTL = gsap.timeline({ defaults: {} });
-
-		sidebarTL.fromTo("#sidebar", { xPercent: -100 }, { xPercent: 0 });
+	gsap.timeline({
+		defaults: {},
+		scrollTrigger: {
+			trigger: "#sidebar",
+			pin: true,
+		},
 	});
 });
 </script>
 
 <template>
-  <aside id="sidebar" class="py-4 px-8 lg:py-8 flex flex-row-reverse lg:flex-col justify-between items-center">
+  <aside id="sidebar" class="border-r-0 lg:border-r border-b lg:border-b-0 border-gray-7 py-4 px-8 lg:py-8 lg:h-screen flex flex-row-reverse lg:flex-col justify-between items-center">
     <MenuButton />
     <Logo />
   </aside>
