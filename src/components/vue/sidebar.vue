@@ -11,15 +11,15 @@ useSideEffect(() => {
 	sidebarTL.fromTo(
 		"#sidebar > svg:first-child",
 		{ opacity: 0, rotateZ: -90 },
-		{ opacity: 1, rotateZ: 90 },
+		{ opacity: 1, rotateZ: 0 },
 	);
 });
 </script>
 
 <template>
-  <aside id="sidebar" class="py-8 flex flex-col justify-between items-center">
+  <aside id="sidebar" class="py-4 px-8 lg:py-8 flex flex-row-reverse lg:flex-col justify-between items-center">
     <MenuIcon class="opacity-0" />
-    <h1 class="mb-8 -mx-4 -rotate-90 text-xl">
+    <h1 class="lg:mb-8 lg:-mx-12 lg:-rotate-90 text-xl">
       <span>
         z
       </span>
@@ -37,8 +37,8 @@ useSideEffect(() => {
       </span>
       <span>
         l
+        <span>
       </span>
-      <span>
         s
       </span>
       <span>

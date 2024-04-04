@@ -3,7 +3,9 @@ import gsap from "gsap";
 import { useSideEffect } from "~/hooks/core.svelte";
 
 useSideEffect(() => {
-	const headingTL = gsap.timeline({ defaults: { duration: 0.5 } });
+	const headingTL = gsap.timeline({
+		defaults: { duration: 0.75, ease: "power3.inOut" },
+	});
 
 	headingTL.fromTo(
 		"#heading > span:first-child",
@@ -30,9 +32,9 @@ useSideEffect(() => {
 });
 </script>
 
-<section class="h-screen grid grid-cols-3">
+<section class="px-8 h-screen grid grid-cols-1 xl:grid-cols-3">
   <article class="col-span-2 grid place-items-center">
-    <h3 id="heading" class="overflow-hidden text-9xl">
+    <h3 id="heading" class="overflow-hidden text-5xl sm:text-7xl md:text-9xl">
       <span class="block opacity-0">
         Crafting
       </span>
