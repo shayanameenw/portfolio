@@ -1,5 +1,5 @@
 <script lang='ts'>
-import gsap from "gsap";
+import { gsap } from "gsap";
 import { useSideEffect } from "~/hooks/core.svelte";
 
 useSideEffect(() => {

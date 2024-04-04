@@ -16,6 +16,7 @@
 		"@astrojs/svelte": "npm:@astrojs/svelte@latest",
 		"@astrojs/vercel": "npm:@astrojs/vercel@latest",
 		"@astrojs/vue": "npm:@astrojs/vue@latest",
+		"@fontsource/cookie": "^5.0.18",
 		"astro": "npm:astro@latest",
 		"gsap": "npm:gsap@latest",
 		"lucide": "npm:lucide@latest",

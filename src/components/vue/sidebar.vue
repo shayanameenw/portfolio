@@ -1,8 +1,8 @@
 <script setup lang='ts'>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { Logo, MenuButton } from "~/components/vue";
 import { useSideEffect } from "~/hooks/core.vue";
-import { MenuButton, Logo } from "~/components/vue";
 
 useSideEffect(() => {
 	gsap.registerPlugin(ScrollTrigger);
