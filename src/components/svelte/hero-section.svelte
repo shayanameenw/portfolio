@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 import EmblaCarousel, { type EmblaOptionsType } from "embla-carousel";
 import Autoplay from "embla-carousel-autoplay";
 import ClassNames from "embla-carousel-class-names";
@@ -7,13 +7,18 @@ import { gsap } from "gsap";
 import { useMount, useSideEffect } from "~/hooks/core.svelte";
 
 useMount(() => {
-	const emblaNode = <HTMLElement>document.querySelector(".embla");
-	const viewportNode = <HTMLElement>emblaNode.querySelector(".embla__viewport");
+	const emblaNode = document.querySelector(".embla");
+	const viewportNode = emblaNode?.querySelector(".embla__viewport") as
+		| HTMLElement
+		| null
+		| undefined;
 
 	const options: EmblaOptionsType = { axis: "y", loop: true, duration: 60 };
 	const plugins = [Autoplay({ delay: 6000 }), ClassNames()];
 
-	const emblaApi = EmblaCarousel(viewportNode, options, plugins);
+	if (viewportNode) {
+		EmblaCarousel(viewportNode, options, plugins);
+	}
 });
 
 useSideEffect(() => {
