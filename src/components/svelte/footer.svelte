@@ -3,50 +3,50 @@ import { ArrowDownLeftIcon } from "lucide-svelte";
 import { Logo } from "~/components/svelte";
 </script>
 
-<footer class="pt-24 px-24 border-t border-gray-7 h-screen hidden lg:grid grid-rows-[1fr_auto] grid-cols-3">
-  <div class="flex flex-col gap-4">
-    <Logo class="font-medium text-5xl" />
-    <p class="text-xl hidden">
-      <span class="block">Crafting future</span>
-      <span class="block">businesses</span>
-    </p>
+<footer class="pt-16 px-16 border-t border-gray-7 grid grid-rows-[auto_1fr_auto] grid-cols-4">
+  <div class="col-span-full self-end">
+    <Logo class="mb-16 font-medium text-5xl" />
   </div>
-  <div class="grid justify-items-end items-center">
-    <ul class="flex flex-col gap-12 text-3xl">
+  <div class="col-span-2 self-start hidden lg:grid justify-items-start items-center">
+    <ul class="flex flex-col gap-6 text-xl">
       <li class="flex gap-2">
-        Home
-        <!-- <span>
-          <ArrowDownLeftIcon class="rotate-180" size={36} />
-        </span> -->
+        Bringing delight to Bento Design System
       </li>
       <li class="flex gap-2">
-        Projects
-        <!-- <span>
-          <ArrowDownLeftIcon class="rotate-180" size={36} />
-        </span> -->
+        Leading the IxD & Motion guild
       </li>
       <li class="flex gap-2">
-        About us
-        <!-- <span>
-          <ArrowDownLeftIcon class="rotate-180" size={36} />
-        </span> -->
+        Envisioning the future of a platform
       </li>
       <li class="flex gap-2">
-        Contact
-        <!-- <span>
-          <ArrowDownLeftIcon class="rotate-180" size={36} />
-        </span> -->
+        Highlights from the past
       </li>
     </ul>
   </div>
-  <div class="grid justify-items-end items-center">
-    <ul class="flex flex-col gap-12 text-3xl">
+  <div class="col-span-2 lg:col-span-1 self-start grid justify-items-start items-center">
+    <ul class="flex flex-col gap-6 text-xl">
+      <li class="flex gap-2">
+        Home
+      </li>
+      <li class="flex gap-2">
+        Projects
+      </li>
+      <li class="flex gap-2">
+        About us
+      </li>
+      <li class="flex gap-2">
+        Contact
+      </li>
+    </ul>
+  </div>
+  <div class="col-span-2 lg:col-span-1 self-start grid justify-items-start items-center">
+    <ul class="flex flex-col gap-6 text-xl">
       <li class="flex gap-2">
         <span>
           Linkedin
         </span>
         <span>
-          <ArrowDownLeftIcon class="rotate-180" size={36} />
+          <ArrowDownLeftIcon class="rotate-180" size={24} />
         </span>
       </li>
       <li class="flex gap-2">
@@ -54,7 +54,7 @@ import { Logo } from "~/components/svelte";
           Twitter
         </span>
         <span>
-          <ArrowDownLeftIcon class="rotate-180" size={36} />
+          <ArrowDownLeftIcon class="rotate-180" size={24} />
         </span>
       </li>
       <li class="flex gap-2">
@@ -62,7 +62,7 @@ import { Logo } from "~/components/svelte";
           Facebook
         </span>
         <span>
-          <ArrowDownLeftIcon class="rotate-180" size={36} />
+          <ArrowDownLeftIcon class="rotate-180" size={24} />
         </span>
       </li>
       <li class="flex gap-2">
@@ -70,12 +70,12 @@ import { Logo } from "~/components/svelte";
           Instagram
         </span>
         <span>
-          <ArrowDownLeftIcon class="rotate-180" size={36} />
+          <ArrowDownLeftIcon class="rotate-180" size={24} />
         </span>
       </li>
     </ul>
   </div>
-  <div class="col-span-3 border-t border-gray-7 mt-6 py-6 flex justify-between items-center">
+  <div class="col-span-4 border-t border-gray-7 mt-16 py-6 flex justify-center lg:justify-between items-center">
     <ul class="flex gap-4 items-center">
       <li>
         &copy; 2024
@@ -87,7 +87,7 @@ import { Logo } from "~/components/svelte";
         <Logo />
       </li>
     </ul>
-    <ul class="flex gap-4 items-center">
+    <ul class="hidden lg:flex gap-8 items-center">
       <li>Privacy Policy</li>
       <li>Terms & Conditions</li>
     </ul>

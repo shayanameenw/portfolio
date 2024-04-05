@@ -53,9 +53,9 @@ useEffect(() => {
 });
 </script>
 
-<section class="py-6 h-[calc(100vh_-_69px)] lg:h-screen overflow-hidden grid grid-cols-1 grid-rows-5 lg:grid-cols-5 lg:grid-rows-1">
-  <div class="row-span-3 col-span-3 grid place-items-center">
-    <h3 id="heading" class="py-8 text-7xl md:text-[9rem]">
+<section class="h-[calc(100vh_-_69px)] lg:h-screen overflow-hidden grid grid-cols-1 grid-rows-5 lg:grid-cols-5 lg:grid-rows-1">
+  <div class="p-2 lg:p-16 row-span-3 col-span-3 grid place-items-center">
+    <h3 id="heading" class="relative z-10 py-8 text-7xl md:text-[8rem]">
       <span class="block opacity-0">
         Crafting
       </span>
@@ -70,35 +70,35 @@ useEffect(() => {
 	<div id="embla" class="embla row-span-2 col-span-2">
 		<div class="embla__viewport">
 			<div class="embla__container">
-				<div class="embla__slide">
+				<div class="embla__slide opacity-0">
 					<img
 						class="embla__slide__img"
 						src="https://picsum.photos/600/350?v=1"
 						alt="Your alt text"
 					/>
 				</div>
-				<div class="embla__slide">
+				<div class="embla__slide opacity-0">
 					<img
 						class="embla__slide__img"
 						src="https://picsum.photos/600/350?v=2"
 						alt="Your alt text"
 					/>
 				</div>
-				<div class="embla__slide">
+				<div class="embla__slide opacity-0">
 					<img
 						class="embla__slide__img"
 						src="https://picsum.photos/600/350?v=3"
 						alt="Your alt text"
 					/>
 				</div>
-				<div class="embla__slide">
+				<div class="embla__slide opacity-0">
 					<img
 						class="embla__slide__img"
 						src="https://picsum.photos/600/350?v=4"
 						alt="Your alt text"
 					/>
 				</div>
-				<div class="embla__slide">
+				<div class="embla__slide opacity-0">
 					<img
 						class="embla__slide__img"
 						src="https://picsum.photos/600/350?v=5"
