@@ -16,8 +16,14 @@ import {isMenuOpenStore} from "~/stores/menu-store"
 
 isMenuOpenStore.listen((isMenuOpen) => {
 	const heroSection = document.querySelector("main section:first-child")
+	const sidebar = document.querySelector("aside")
 
-	heroSection?.scrollIntoView()
+	if (document.body.clientWidth > 1024) {
+		heroSection?.scrollIntoView({ behavior: "smooth" })
+	} else {
+		sidebar?.scrollIntoView({ behavior: "smooth" })
+	}
+
 
 	document.body.style.height = isMenuOpen ? "100vh" : 'auto'
 	document.body.style.overflow = isMenuOpen ? "hidden" : 'auto'
