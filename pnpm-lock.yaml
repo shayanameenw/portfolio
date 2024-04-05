@@ -17,6 +17,15 @@ dependencies:
   astro:
     specifier: npm:astro@latest
     version: 4.5.15(typescript@5.4.3)
+  embla-carousel:
+    specifier: ^8.0.1
+    version: 8.0.1
+  embla-carousel-autoplay:
+    specifier: ^8.0.1
+    version: 8.0.1(embla-carousel@8.0.1)
+  embla-carousel-class-names:
+    specifier: ^8.0.1
+    version: 8.0.1(embla-carousel@8.0.1)
   gsap:
     specifier: npm:gsap@latest
     version: 3.12.5
@@ -2158,6 +2167,26 @@ packages:
 
   /electron-to-chromium@1.4.726:
     resolution: {integrity: sha512-xtjfBXn53RORwkbyKvDfTajtnTp0OJoPOIBzXvkNbb7+YYvCHJflba3L7Txyx/6Fov3ov2bGPr/n5MTixmPhdQ==}
+
+  /embla-carousel-autoplay@8.0.1(embla-carousel@8.0.1):
+    resolution: {integrity: sha512-4zcB6jVSGTJSXL7uroccjak9U+lyyoZTO4NISwdCHNMYVbIra8aZGEz0I/4Ql753do6jqjaRE8MsCBhJbt6u6A==}
+    peerDependencies:
+      embla-carousel: 8.0.1
+    dependencies:
+      embla-carousel: 8.0.1
+    dev: false
+
+  /embla-carousel-class-names@8.0.1(embla-carousel@8.0.1):
+    resolution: {integrity: sha512-PxCURrM6l5gRrOGr+i4EbDBbxwtSAHfdtYtilYMzcE4Z1kdHXTXXx0bF94jqu6to3SsRixP1cFDKYs3YvKgm+g==}
+    peerDependencies:
+      embla-carousel: 8.0.1
+    dependencies:
+      embla-carousel: 8.0.1
+    dev: false
+
+  /embla-carousel@8.0.1:
+    resolution: {integrity: sha512-RsaMRyBCd144N95gb3XoI+H9zj3RI4y0qcfvKYEh2tIAIEenL9CW9vwzltCeoYkWYipGdkvup+HGT9ewG1YTEw==}
+    dev: false
 
   /emmet@2.4.7:
     resolution: {integrity: sha512-O5O5QNqtdlnQM2bmKHtJgyChcrFMgQuulI+WdiOw2NArzprUqqxUW6bgYtKvzKgrsYpuLWalOkdhNP+1jluhCA==}
