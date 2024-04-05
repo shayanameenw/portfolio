@@ -1,17 +1,10 @@
 <script lang='ts'>
-import { gsap } from "gsap";
-import { useSideEffect } from "~/hooks/core.svelte";
+const { class: className }: { class?: string } = $props();
 
 const LOGO = "zedsols";
-
-useSideEffect(() => {
-	const logoTL = gsap.timeline({ defaults: { stagger: 0.25 } });
-
-	logoTL.fromTo("#logo", { opacity: 0 }, { opacity: 1 });
-});
 </script>
 
-<h1 id="logo" class="opacity-0 font-medium text-xl">
+<h1 class={className}>
   {#each LOGO.split("") as letter}  
     <span>
       { `${letter} ` }

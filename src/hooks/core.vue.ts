@@ -1,15 +1,15 @@
 import { effect, onBeforeUnmount, onMounted, reactive } from "vue";
 
-export function useReactive<T>(value: T): Ref<T> {
+export function useRef<T>(value: T): Ref<T> {
 	const reference = reactive<Ref<T>>({ value }) as Ref<T>;
 
 	return reference;
 }
 
-export function useDerived<T>(fn: () => T): Ref<T> {
+export function useComputed<T>(fn: () => T): Ref<T> {
 	const reference = reactive<Ref<T>>({ value: fn() }) as Ref<T>;
 
-	useSideEffect(() => {
+	useEffect(() => {
 		reference.value = fn();
 	});
 
@@ -24,16 +24,16 @@ export function useUnmount(fn: () => void): void {
 	onBeforeUnmount(fn);
 }
 
-export function useSideEffect(fn: () => void): void {
+export function useEffect(fn: () => void): void {
 	onMounted(() => {
 		effect(fn);
 	});
 }
 
-export function useReactiveStore<T>(store: Store<T>) {
-	const reference = useReactive(store.get());
+export function useStore<T>(store: Store<T>) {
+	const reference = useRef(store.get());
 
-	useSideEffect(() => {
+	useEffect(() => {
 		store.set(reference.value);
 	});
 

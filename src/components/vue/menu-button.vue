@@ -1,16 +1,16 @@
 <script setup lang='ts'>
 import { gsap } from "gsap";
 import { MenuIcon, XIcon } from "lucide-vue-next";
-import { useReactiveStore, useSideEffect } from "~/hooks/core.vue";
+import { useStore, useEffect } from "~/hooks/core.vue";
 import { isMenuOpenStore } from "~/stores/menu-store";
 
-const isMenuOpen = useReactiveStore(isMenuOpenStore);
+const isMenuOpen = useStore(isMenuOpenStore);
 
 function toggleMenu() {
 	isMenuOpen.value = !isMenuOpen.value;
 }
 
-useSideEffect(() => {
+useEffect(() => {
 	const menuBtnTL = gsap.timeline({ defaults: { duration: 0.75 } });
 
 	menuBtnTL.fromTo(

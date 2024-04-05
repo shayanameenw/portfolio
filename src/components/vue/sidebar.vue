@@ -2,9 +2,9 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { Logo, MenuButton } from "~/components/vue";
-import { useSideEffect } from "~/hooks/core.vue";
+import { useEffect } from "~/hooks/core.vue";
 
-useSideEffect(() => {
+useEffect(() => {
 	gsap.registerPlugin(ScrollTrigger);
 
 	const mm = gsap.matchMedia();

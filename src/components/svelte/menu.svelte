@@ -1,12 +1,12 @@
 <script lang='ts'>
 import { gsap } from "gsap";
-import { useReactiveStore, useSideEffect } from "~/hooks/core.svelte";
+import { useStore, useEffect } from "~/hooks/core.svelte";
 import { isMenuOpenStore } from "~/stores/menu-store";
 import { Logo } from "~/components/svelte";
 
-const isMenuOpen = useReactiveStore(isMenuOpenStore);
+const isMenuOpen = useStore(isMenuOpenStore);
 
-useSideEffect(() => {
+useEffect(() => {
 	const menuTl = gsap.timeline({ defaults: { duration: 1 } });
 
 	if (isMenuOpen.value) {

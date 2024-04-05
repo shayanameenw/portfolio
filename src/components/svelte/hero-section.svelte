@@ -4,7 +4,7 @@ import Autoplay from "embla-carousel-autoplay";
 import ClassNames from "embla-carousel-class-names";
 
 import { gsap } from "gsap";
-import { useMount, useSideEffect } from "~/hooks/core.svelte";
+import { useMount, useEffect } from "~/hooks/core.svelte";
 
 useMount(() => {
 	const emblaNode = document.querySelector(".embla");
@@ -21,7 +21,7 @@ useMount(() => {
 	}
 });
 
-useSideEffect(() => {
+useEffect(() => {
 	const headingTL = gsap.timeline({
 		defaults: { duration: 1.5, stagger: 0.25, ease: "power3.inOut" },
 	});
@@ -53,7 +53,7 @@ useSideEffect(() => {
 });
 </script>
 
-<section class="h-[calc(100vh_-_69px)] lg:h-screen overflow-hidden grid grid-cols-1 grid-rows-5 lg:grid-cols-5 lg:grid-rows-1">
+<section class="py-6 h-[calc(100vh_-_69px)] lg:h-screen overflow-hidden grid grid-cols-1 grid-rows-5 lg:grid-cols-5 lg:grid-rows-1">
   <article class="row-span-3 col-span-3 grid place-items-center">
     <h3 id="heading" class="py-8 text-7xl md:text-[9rem]">
       <span class="block opacity-0">
@@ -82,19 +82,22 @@ useSideEffect(() => {
 						class="embla__slide__img"
 						src="https://picsum.photos/600/350?v=2"
 						alt="Your alt text"
-					/>				</div>
+					/>
+				</div>
 				<div class="embla__slide">
 					<img
 						class="embla__slide__img"
 						src="https://picsum.photos/600/350?v=3"
 						alt="Your alt text"
-					/>				</div>
+					/>
+				</div>
 				<div class="embla__slide">
 					<img
 						class="embla__slide__img"
 						src="https://picsum.photos/600/350?v=4"
 						alt="Your alt text"
-					/>				</div>
+					/>
+				</div>
 				<div class="embla__slide">
 					<img
 						class="embla__slide__img"
@@ -135,15 +138,13 @@ useSideEffect(() => {
   min-width: 0;
   padding-left: var(--slide-spacing);
 }
-/* .embla__slide {
+.embla__slide {
 	opacity: 1;
-	scale: 1.25;
-	transition: 0.5s opacity 0.2s ease-in-out, 0.5s scale 0.2s ease-in-out;
+	transition: 0.5s opacity 0.25s ease-in-out;
 }
 .embla__slide:not(.is-snapped) {
-	opacity: 0;
-	scale: 1;
-} */
+	opacity: 0.5;
+}
 .embla__slide__img {
   display: block;
   height: var(--slide-height);

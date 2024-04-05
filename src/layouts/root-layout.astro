@@ -1,7 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import { Sidebar } from "~/components/vue";
-import { Menu } from "~/components/svelte";
+import { Footer, Menu } from "~/components/svelte";
 
 interface Props {
 	title: string;
@@ -45,11 +45,12 @@ isMenuOpenStore.listen((isMenuOpen) => {
 
 		<ViewTransitions />
 	</head>
-	<body class="flex flex-col lg:flex-row">
+	<body class="grid grid-cols-[6rem_1fr]">
 		<Sidebar client:load />
     <main class="relative flex-1">
 			<Menu client:load />
 			<slot />
+			<Footer />
 		</main>
 	</body>
 </html>
