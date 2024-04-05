@@ -21,7 +21,7 @@ useSideEffect(() => {
 });
 </script>
 
-<section class="px-8 h-screen overflow-hidden grid grid-cols-1 xl:grid-cols-3">
+<section class="px-8 h-[calc(100vh_-_69px)] lg:h-screen overflow-hidden grid grid-cols-1 xl:grid-cols-3">
   <article class="col-span-2 grid place-items-center">
     <h3 id="heading" class="text-7xl md:text-[10rem]">
       <span class="block opacity-0">

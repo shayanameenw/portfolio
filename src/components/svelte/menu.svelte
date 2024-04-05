@@ -20,7 +20,7 @@ useSideEffect(() => {
 </script>
 
 {#if isMenuOpen.value}
-  <section id="menu" class="absolute z-10 top-0 left-0 right-0 h-screen grid place-items-center bg-backgroundPrimary">
+  <section id="menu" class="absolute z-10 top-0 left-0 right-0 h-[calc(100vh_-_69px)] lg:h-screen grid place-items-center bg-backgroundPrimary">
     <Logo />
   </section>
 {/if}
