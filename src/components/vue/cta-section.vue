@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="p-16 min-h-screen lg:grid grid-rows-[1fr_auto_1fr]">
+  <section class="p-2 min-h-screen lg:grid grid-rows-[1fr_auto_1fr]">
     <div class="grid place-items-center">
       <h2 class="text-3xl lg:text-5xl leading-relaxed">Zed solutions brings life immersive events and experiences through quality design, production and end-to-end project management.</h2>
     </div>

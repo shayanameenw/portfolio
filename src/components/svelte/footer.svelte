@@ -3,7 +3,7 @@ import { ArrowDownLeftIcon } from "lucide-svelte";
 import { Logo } from "~/components/svelte";
 </script>
 
-<footer class="pt-16 px-16 border-t border-gray-7 grid grid-rows-[auto_1fr_auto] grid-cols-4">
+<footer class="pt-2 px-2 border-t border-gray-7 grid grid-rows-[auto_1fr_auto] grid-cols-4">
   <div class="col-span-full self-end">
     <Logo class="mb-16 font-medium text-5xl" />
   </div>
@@ -75,7 +75,7 @@ import { Logo } from "~/components/svelte";
       </li>
     </ul>
   </div>
-  <div class="col-span-4 border-t border-gray-7 mt-16 py-6 flex justify-center lg:justify-between items-center">
+  <div class="col-span-4 border-t border-gray-7 mt-2 py-6 flex justify-center lg:justify-between items-center">
     <ul class="flex gap-4 items-center">
       <li>
         &copy; 2024
