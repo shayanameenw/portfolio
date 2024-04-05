@@ -3,7 +3,7 @@ import { ArrowDownLeftIcon } from "lucide-svelte";
 import { Logo } from "~/components/svelte";
 </script>
 
-<footer class="pt-24 px-24 border-t border-gray-7 h-screen grid grid-rows-[1fr_auto] grid-cols-3">
+<footer class="pt-24 px-24 border-t border-gray-7 h-screen hidden lg:grid grid-rows-[1fr_auto] grid-cols-3">
   <div class="flex flex-col gap-4">
     <Logo class="font-medium text-5xl" />
     <p class="text-xl hidden">

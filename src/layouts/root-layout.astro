@@ -45,7 +45,7 @@ isMenuOpenStore.listen((isMenuOpen) => {
 
 		<ViewTransitions />
 	</head>
-	<body class="grid grid-cols-[6rem_1fr]">
+	<body class="flex flex-col lg:flex-row">
 		<Sidebar client:load />
     <main class="relative flex-1">
 			<Menu client:load />
