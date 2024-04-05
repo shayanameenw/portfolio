@@ -54,7 +54,7 @@ useEffect(() => {
 </script>
 
 <section class="py-6 h-[calc(100vh_-_69px)] lg:h-screen overflow-hidden grid grid-cols-1 grid-rows-5 lg:grid-cols-5 lg:grid-rows-1">
-  <article class="row-span-3 col-span-3 grid place-items-center">
+  <div class="row-span-3 col-span-3 grid place-items-center">
     <h3 id="heading" class="py-8 text-7xl md:text-[9rem]">
       <span class="block opacity-0">
         Crafting
@@ -66,8 +66,8 @@ useEffect(() => {
 				businesses
 			</span>
     </h3>
-  </article>
-	<article id="embla" class="embla row-span-2 col-span-2">
+  </div>
+	<div id="embla" class="embla row-span-2 col-span-2">
 		<div class="embla__viewport">
 			<div class="embla__container">
 				<div class="embla__slide">
@@ -107,7 +107,7 @@ useEffect(() => {
 				</div>
 			</div>
 		</div>
-  </article>
+  </div>
 </section>
 
 <style scoped>
