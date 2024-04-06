@@ -9,7 +9,7 @@ import {
 import { Logo } from "~/components/svelte";
 </script>
 
-<footer class="pt-16 px-8 lg:px-16 border-t border-gray-7 grid grid-rows-[auto_1fr_auto] grid-cols-4">
+<footer class="pt-8 lg:pt-16 px-8 lg:px-16 border-t border-gray-7 grid grid-rows-[auto_1fr_auto] grid-cols-4">
   <p class="col-span-2 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300">
     Explore projects
   </p>
@@ -103,7 +103,7 @@ import { Logo } from "~/components/svelte";
       </li>
     </ul>
   </div>
-  <div class="col-span-4 border-t border-gray-7 mt-16 py-6 flex justify-center lg:justify-between items-center">
+  <div class="col-span-4 border-t border-gray-7 mt-8 lg:mt-16 py-6 flex justify-center lg:justify-between items-center">
     <ul class="flex gap-4 items-center">
       <li>
         &copy; 2024
