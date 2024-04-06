@@ -10,7 +10,7 @@ const LOGO = "zedsols";
       { `${letter} ` }
     </span>
   {/each}
-  <span class="font-bold text-3xl text-teal-700">
+  <span class="font-black text-[1em] text-teal-700">
     .
   </span>
 </h1>

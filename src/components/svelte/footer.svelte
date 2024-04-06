@@ -89,7 +89,7 @@ import { Logo } from "~/components/svelte";
       <li>
         -
       </li>
-      <li class="-mt-3">
+      <li>
         <Logo />
       </li>
     </ul>
