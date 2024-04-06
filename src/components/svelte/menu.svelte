@@ -57,7 +57,7 @@ useEffect(() => {
 			</div>
 		</div>
 		<div>
-			<ul class="flex flex-col gap-8 lg:gap-12 text-3xl lg:text-5xl">
+			<ul class="flex flex-col gap-8 lg:gap-12 text-5xl">
 				<li class="flex gap-2 lg:justify-end">
 					Home
 				</li>
