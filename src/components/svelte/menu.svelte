@@ -62,10 +62,10 @@ useEffect(() => {
 					Home
 				</li>
 				<li class="flex gap-2 lg:justify-end">
-					Projects
+					Services
 				</li>
 				<li class="flex gap-2 lg:justify-end">
-					About us
+					Projects
 				</li>
 				<li class="flex gap-2 lg:justify-end">
 					Contact

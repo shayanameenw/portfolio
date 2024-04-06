@@ -41,10 +41,10 @@ import { Logo } from "~/components/svelte";
         Home
       </li>
       <li class="flex gap-2">
-        Projects
+        Services
       </li>
       <li class="flex gap-2">
-        About us
+        Projects
       </li>
       <li class="flex gap-2">
         Contact
