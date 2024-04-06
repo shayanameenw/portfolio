@@ -1,5 +1,11 @@
 <script lang='ts'>
-import { ArrowDownLeftIcon } from "lucide-svelte";
+import {
+	ArrowDownLeftIcon,
+	FacebookIcon,
+	InstagramIcon,
+	LinkedinIcon,
+	TwitterIcon,
+} from "lucide-svelte";
 import { Logo } from "~/components/svelte";
 </script>
 
@@ -7,10 +13,10 @@ import { Logo } from "~/components/svelte";
   <p class="col-span-2 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300">
     Explore projects
   </p>
-  <p class="col-span-2 lg:col-span-1 self-end mb-4 font-bold text-sm text-teal-300">
+  <p class="col-span-2 lg:col-span-1 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300">
     More about zed
   </p>
-  <p class="col-span-2 lg:col-span-1 self-end mb-4 font-bold text-sm text-teal-300">
+  <p class="col-span-2 lg:col-span-1 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300">
     Connect
   </p>
   <div class="col-span-2 self-start hidden lg:grid justify-items-start items-center">
@@ -29,7 +35,7 @@ import { Logo } from "~/components/svelte";
       </li>
     </ul>
   </div>
-  <div class="col-span-2 lg:col-span-1 self-start grid justify-items-start items-center">
+  <div class="col-span-2 lg:col-span-1 self-start hidden lg:grid justify-items-start items-center">
     <ul class="flex flex-col gap-6 text-xl">
       <li class="flex gap-2">
         Home
@@ -45,7 +51,7 @@ import { Logo } from "~/components/svelte";
       </li>
     </ul>
   </div>
-  <div class="col-span-2 lg:col-span-1 self-start grid justify-items-start items-center">
+  <div class="col-span-2 lg:col-span-1 self-start hidden lg:grid justify-items-start items-center">
     <ul class="flex flex-col gap-6 text-xl">
       <li class="flex gap-2">
         <span>
@@ -78,6 +84,22 @@ import { Logo } from "~/components/svelte";
         <span>
           <ArrowDownLeftIcon class="rotate-180" size={24} />
         </span>
+      </li>
+    </ul>
+  </div>
+  <div class="col-span-4">
+    <ul class="flex lg:hidden gap-4 justify-center items-center">
+      <li>
+        <LinkedinIcon />
+      </li>
+      <li>
+        <TwitterIcon />
+      </li>
+      <li>
+        <FacebookIcon />
+      </li>
+      <li>
+        <InstagramIcon />
       </li>
     </ul>
   </div>
