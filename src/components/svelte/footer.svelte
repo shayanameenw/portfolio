@@ -4,9 +4,15 @@ import { Logo } from "~/components/svelte";
 </script>
 
 <footer class="pt-16 px-8 lg:px-16 border-t border-gray-7 grid grid-rows-[auto_1fr_auto] grid-cols-4">
-  <div class="col-span-full self-end">
-    <Logo class="mb-16 font-medium text-5xl" />
-  </div>
+  <p class="col-span-2 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300">
+    Explore projects
+  </p>
+  <p class="col-span-2 lg:col-span-1 self-end mb-4 font-bold text-sm text-teal-300">
+    More about zed
+  </p>
+  <p class="col-span-2 lg:col-span-1 self-end mb-4 font-bold text-sm text-teal-300">
+    Connect
+  </p>
   <div class="col-span-2 self-start hidden lg:grid justify-items-start items-center">
     <ul class="flex flex-col gap-6 text-xl">
       <li class="flex gap-2">
