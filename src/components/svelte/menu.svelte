@@ -26,9 +26,9 @@ useEffect(() => {
 </script>
 
 {#if isMenuOpen.value}
-  <section id="menu" class="absolute z-50 top-0 left-0 right-0 py-28 px-8 lg:px-28 h-[calc(100vh_-_69px)] lg:h-screen flex bg-backgroundPrimary">
-		<div class="flex-1 flex flex-col justify-between">	
-			<div class="flex flex-col gap-8">
+  <section id="menu" class="absolute z-50 top-0 left-0 right-0 py-28 px-8 lg:px-28 h-[calc(100vh_-_69px)] lg:h-screen flex flex-col-reverse lg:flex-row gap-20 lg:gap-4 bg-backgroundPrimary">
+		<div class="flex-1 flex flex-col justify-between gap-12">	
+			<div class="flex flex-col gap-4 lg:gap-8">
 				<h3 class="text-3xl">
 					<span class="block">
 						Crafting future
@@ -53,21 +53,21 @@ useEffect(() => {
 				</ul>
 			</div>		
 			<div>
-				<Logo class="text-9xl" />
+				<Logo class="text-5xl lg:text-9xl" />
 			</div>
 		</div>
 		<div>
-			<ul class="flex flex-col gap-12 text-5xl">
-				<li class="flex gap-2 justify-end">
+			<ul class="flex flex-col gap-8 lg:gap-12 text-5xl">
+				<li class="flex gap-2 lg:justify-end">
 					Home
 				</li>
-				<li class="flex gap-2 justify-end">
+				<li class="flex gap-2 lg:justify-end">
 					Projects
 				</li>
-				<li class="flex gap-2 justify-end">
+				<li class="flex gap-2 lg:justify-end">
 					About us
 				</li>
-				<li class="flex gap-2 justify-end">
+				<li class="flex gap-2 lg:justify-end">
 					Contact
 				</li>
 			</ul>
