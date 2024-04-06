@@ -2,9 +2,7 @@
 import { gsap } from "gsap";
 import { useStore, useEffect } from "~/hooks/core.svelte";
 import { isMenuOpenStore } from "~/stores/menu-store";
-import { Logo } from "~/components/svelte";
-import {
-	LinkedinIcon,
+import { Logo } from "~/components/svelte";~/stores/menuIcon,
 	TwitterIcon,
 	FacebookIcon,
 	InstagramIcon,

@@ -2,7 +2,7 @@
 import { gsap } from "gsap";
 import { MenuIcon, XIcon } from "lucide-vue-next";
 import { useStore, useEffect } from "~/hooks/core.vue";
-import { isMenuOpenStore } from "~/stores/menu-store";
+import { isMenuOpenStore } from "~/stores/menu";
 
 const isMenuOpen = useStore(isMenuOpenStore);
 
