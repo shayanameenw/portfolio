@@ -6,27 +6,34 @@ import { useEffect } from "~/hooks/core.vue";
 useEffect(() => {
 	gsap.registerPlugin(ScrollTrigger);
 
-	const ctaSectionTL = gsap.timeline({
-		defaults: { duration: 0.5 },
-		scrollTrigger: {
-			trigger: "#cta-section",
-			start: "top center",
-		},
-	});
-
-	ctaSectionTL.fromTo(
+	gsap.fromTo(
 		"#text-1",
-		{ opacity: 0, yPercent: 100 },
-		{ opacity: 1, yPercent: 0 },
+		{ opacity: 0, yPercent: 25 },
+		{
+			opacity: 1,
+			yPercent: 0,
+			scrollTrigger: "#text-1",
+		},
 	);
 
-	ctaSectionTL.fromTo(
+	gsap.fromTo(
 		"#text-2",
-		{ opacity: 0, yPercent: 100 },
-		{ opacity: 1, yPercent: 0 },
+		{ opacity: 0, yPercent: 25 },
+		{
+			opacity: 1,
+			yPercent: 0,
+			scrollTrigger: "#text-2",
+		},
 	);
 
-	ctaSectionTL.fromTo("#cta-btn", { opacity: 0 }, { opacity: 1 }, "<");
+	gsap.fromTo(
+		"#cta-btn",
+		{ opacity: 0 },
+		{
+			opacity: 1,
+			scrollTrigger: "#cta-btn",
+		},
+	);
 });
 </script>
 
