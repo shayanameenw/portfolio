@@ -1,56 +1,56 @@
 <script lang="ts">
-	import EmblaCarousel, {type EmblaOptionsType} from "embla-carousel";
-	import Autoplay from "embla-carousel-autoplay";
-	import ClassNames from "embla-carousel-class-names";
+import EmblaCarousel, { type EmblaOptionsType } from "embla-carousel";
+import Autoplay from "embla-carousel-autoplay";
+import ClassNames from "embla-carousel-class-names";
 
-	import gsap from "gsap";
-	import {useEffect, useMount} from "~/hooks/core.svelte";
+import gsap from "gsap";
+import { useEffect, useMount } from "~/hooks/core.svelte";
 
-	useMount(() => {
-        const emblaNode = document.querySelector(".embla");
-        const viewportNode = emblaNode?.querySelector(".embla__viewport") as
-            | HTMLElement
-            | null
-            | undefined;
+useMount(() => {
+	const emblaNode = document.querySelector(".embla");
+	const viewportNode = emblaNode?.querySelector(".embla__viewport") as
+		| HTMLElement
+		| null
+		| undefined;
 
-        const options: EmblaOptionsType = {axis: "y", loop: true, duration: 60};
-        const plugins = [Autoplay({delay: 6000}), ClassNames()];
+	const options: EmblaOptionsType = { axis: "y", loop: true, duration: 60 };
+	const plugins = [Autoplay({ delay: 6000 }), ClassNames()];
 
-        if (viewportNode) {
-            EmblaCarousel(viewportNode, options, plugins);
-        }
-    });
+	if (viewportNode) {
+		EmblaCarousel(viewportNode, options, plugins);
+	}
+});
 
-    useEffect(() => {
-        const headingTL = gsap.timeline({
-            defaults: {duration: 1.5, stagger: 0.25, ease: "power3.inOut"},
-        });
+useEffect(() => {
+	const headingTL = gsap.timeline({
+		defaults: { duration: 1.5, stagger: 0.25, ease: "power3.inOut" },
+	});
 
-        headingTL.fromTo(
-            "#heading > span",
-            {
-                opacity: 0,
-                y: "100vh",
-            },
-            {
-                opacity: 1,
-                y: 0,
-            },
-        );
+	headingTL.fromTo(
+		"#heading > span",
+		{
+			opacity: 0,
+			y: "100vh",
+		},
+		{
+			opacity: 1,
+			y: 0,
+		},
+	);
 
-        headingTL.fromTo(
-            "#embla",
-            {
-                opacity: 0,
-                y: "100vh",
-            },
-            {
-                opacity: 1,
-                y: 0,
-            },
-            "<",
-        );
-    });
+	headingTL.fromTo(
+		"#embla",
+		{
+			opacity: 0,
+			y: "100vh",
+		},
+		{
+			opacity: 1,
+			y: 0,
+		},
+		"<",
+	);
+});
 </script>
 
 <section
@@ -68,42 +68,42 @@
 			</span>
         </h3>
     </div>
-    <div id="embla" class="embla row-span-2 col-span-2">
+    <div id="embla" class="opacity-0 embla row-span-2 col-span-2">
         <div class="embla__viewport">
             <div class="embla__container">
                 <div class="embla__slide opacity-0">
                     <img
                             class="embla__slide__img"
                             src="https://picsum.photos/600/350?v=1"
-                            alt="Your alt text"
+                            alt=""
                     />
                 </div>
                 <div class="embla__slide opacity-0">
                     <img
                             class="embla__slide__img"
                             src="https://picsum.photos/600/350?v=2"
-                            alt="Your alt text"
+                            alt=""
                     />
                 </div>
                 <div class="embla__slide opacity-0">
                     <img
                             class="embla__slide__img"
                             src="https://picsum.photos/600/350?v=3"
-                            alt="Your alt text"
+                            alt=""
                     />
                 </div>
                 <div class="embla__slide opacity-0">
                     <img
                             class="embla__slide__img"
                             src="https://picsum.photos/600/350?v=4"
-                            alt="Your alt text"
+                            alt=""
                     />
                 </div>
                 <div class="embla__slide opacity-0">
                     <img
                             class="embla__slide__img"
                             src="https://picsum.photos/600/350?v=5"
-                            alt="Your alt text"
+                            alt=""
                     />
                 </div>
             </div>
