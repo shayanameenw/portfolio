@@ -38,52 +38,68 @@ import { Logo } from "~/components/svelte";
   <div class="col-span-2 lg:col-span-1 self-start hidden lg:grid justify-items-start items-center">
     <ul class="flex flex-col gap-6 text-xl">
       <li class="flex gap-2">
-        Home
+        <a href="/">
+          Home
+        </a>
       </li>
       <li class="flex gap-2">
-        Services
+        <a href="/services">
+          Services
+        </a>
       </li>
       <li class="flex gap-2">
-        Projects
+        <a href="/projects">
+          Projects
+        </a>
       </li>
       <li class="flex gap-2">
-        Contact
+        <a href="/contact">
+          Contact
+        </a>
       </li>
     </ul>
   </div>
   <div class="col-span-2 lg:col-span-1 self-start hidden lg:grid justify-items-start items-center">
     <ul class="flex flex-col gap-6 text-xl">
-      <li class="flex gap-2">
-        <span>
-          Linkedin
-        </span>
-        <span>
-          <ArrowDownLeftIcon class="rotate-180" size={24} />
-        </span>
+      <li>
+        <a class="flex gap-2" href="/">
+          <span>
+            Linkedin
+          </span>
+          <span>
+            <ArrowDownLeftIcon class="rotate-180" size={24} />
+          </span>
+        </a>
       </li>
-      <li class="flex gap-2">
-        <span>
-          Twitter
-        </span>
-        <span>
-          <ArrowDownLeftIcon class="rotate-180" size={24} />
-        </span>
+      <li>
+        <a class="flex gap-2" href="/">
+          <span>
+            Twitter
+          </span>
+          <span>
+            <ArrowDownLeftIcon class="rotate-180" size={24} />
+          </span>
+        </a>
       </li>
-      <li class="flex gap-2">
-        <span>
-          Facebook
-        </span>
-        <span>
-          <ArrowDownLeftIcon class="rotate-180" size={24} />
-        </span>
+      <li>
+        <a class="flex gap-2" href="/">
+          <span>
+            Facebook
+          </span>
+          <span>
+            <ArrowDownLeftIcon class="rotate-180" size={24} />
+          </span>
+        </a>
       </li>
-      <li class="flex gap-2">
-        <span>
-          Instagram
-        </span>
-        <span>
-          <ArrowDownLeftIcon class="rotate-180" size={24} />
-        </span>
+      <li>
+        <a class="flex gap-2" href="/">
+          <span>
+            Instagram
+          </span>
+          <span>
+            <ArrowDownLeftIcon class="rotate-180" size={24} />
+          </span>
+        </a>
       </li>
     </ul>
   </div>
