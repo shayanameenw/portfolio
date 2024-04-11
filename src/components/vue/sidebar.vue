@@ -1,35 +1,35 @@
 <script setup lang='ts'>
 import gsap from "gsap";
-import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
-import {Logo, MenuButton} from "~/components/vue";
-import {useEffect} from "~/hooks/core.vue";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { Logo, MenuButton } from "~/components/vue";
+import { useEffect } from "~/hooks/core.vue";
 
 useEffect(() => {
-  gsap.registerPlugin(ScrollTrigger);
+	gsap.registerPlugin(ScrollTrigger);
 
-  const mm = gsap.matchMedia();
+	const mm = gsap.matchMedia();
 
-  mm.add("(min-width: 1024px)", () => {
-    gsap.timeline({
-      defaults: {},
-      scrollTrigger: {
-        trigger: "#sidebar",
-        pin: true,
-        end: () => {
-          const main = document.querySelector("main");
-          const heroSection = document.querySelector(
-              "main section:first-child",
-          );
+	mm.add("(min-width: 1024px)", () => {
+		gsap.timeline({
+			defaults: {},
+			scrollTrigger: {
+				trigger: "#sidebar",
+				pin: true,
+				end: () => {
+					const main = document.querySelector("main");
+					const heroSection = document.querySelector(
+						"main section:first-child",
+					);
 
-          if (main && heroSection) {
-            return `+=${main.clientHeight - heroSection.clientHeight}`;
-          }
+					if (main && heroSection) {
+						return `+=${main.clientHeight - heroSection.clientHeight}`;
+					}
 
-          return 0;
-        },
-      },
-    });
-  });
+					return 0;
+				},
+			},
+		});
+	});
 });
 </script>
 

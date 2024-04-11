@@ -1,39 +1,39 @@
 <script setup lang='ts'>
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import {useEffect} from "~/hooks/core.vue";
+import { useEffect } from "~/hooks/core.vue";
 
 useEffect(() => {
-  gsap.registerPlugin(ScrollTrigger);
+	gsap.registerPlugin(ScrollTrigger);
 
-  gsap.fromTo(
-      "#text-1",
-      {opacity: 0, yPercent: 25},
-      {
-        opacity: 1,
-        yPercent: 0,
-        scrollTrigger: "#text-1",
-      },
-  );
+	gsap.fromTo(
+		"#text-1",
+		{ opacity: 0, yPercent: 25 },
+		{
+			opacity: 1,
+			yPercent: 0,
+			scrollTrigger: "#text-1",
+		},
+	);
 
-  gsap.fromTo(
-      "#text-2",
-      {opacity: 0, yPercent: 25},
-      {
-        opacity: 1,
-        yPercent: 0,
-        scrollTrigger: "#text-2",
-      },
-  );
+	gsap.fromTo(
+		"#text-2",
+		{ opacity: 0, yPercent: 25 },
+		{
+			opacity: 1,
+			yPercent: 0,
+			scrollTrigger: "#text-2",
+		},
+	);
 
-  gsap.fromTo(
-      "#cta-btn",
-      {opacity: 0},
-      {
-        opacity: 1,
-        scrollTrigger: "#cta-btn",
-      },
-  );
+	gsap.fromTo(
+		"#cta-btn",
+		{ opacity: 0 },
+		{
+			opacity: 1,
+			scrollTrigger: "#cta-btn",
+		},
+	);
 });
 </script>
 

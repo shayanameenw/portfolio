@@ -1,13 +1,13 @@
 <script setup lang='ts'>
 import gsap from "gsap";
-import {useEffect} from "~/hooks/core.vue";
+import { useEffect } from "~/hooks/core.vue";
 
 const LOGO = "zedsols";
 
 useEffect(() => {
-  const logoTL = gsap.timeline({defaults: {stagger: 0.25}});
+	const logoTL = gsap.timeline({ defaults: { stagger: 0.25 } });
 
-  logoTL.fromTo("#logo > span", {opacity: 0}, {opacity: 1});
+	logoTL.fromTo("#logo > span", { opacity: 0 }, { opacity: 1 });
 });
 </script>
 
