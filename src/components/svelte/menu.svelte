@@ -59,22 +59,22 @@ useEffect(() => {
     <div>
       <ul class="flex flex-col gap-8 lg:gap-12 text-5xl">
         <li class="flex gap-2 lg:justify-end">
-          <a href="/">
+          <a on:click={() => {isMenuOpen.value = false}} href="/">
             Home
           </a>
         </li>
         <li class="flex gap-2 lg:justify-end">
-          <a href="/services">
+          <a on:click={() => {isMenuOpen.value = false}} href="/services">
             Services
           </a>
         </li>
         <li class="flex gap-2 lg:justify-end">
-          <a href="/projects">
+          <a on:click={() => {isMenuOpen.value = false}} href="/projects">
             Projects
           </a>
         </li>
         <li class="flex gap-2 lg:justify-end">
-          <a href="/contact">
+          <a on:click={() => {isMenuOpen.value = false}} href="/contact">
             Contact
           </a>
         </li>
