@@ -1,3 +1,4 @@
+export { default as ContactSection } from "~/components/svelte/contact-section.svelte";
 export { default as Footer } from "~/components/svelte/footer.svelte";
 export { default as HeroSection } from "~/components/svelte/hero-section.svelte";
 export { default as Logo } from "~/components/svelte/logo.svelte";
