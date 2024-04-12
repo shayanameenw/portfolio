@@ -17,12 +17,10 @@ useEffect(() => {
 				pin: true,
 				end: () => {
 					const main = document.querySelector("main");
-					const heroSection = document.querySelector(
-						"main section:first-child",
-					);
+					const sidebar = document.querySelector("#sidebar");
 
-					if (main && heroSection) {
-						return `+=${main.clientHeight - heroSection.clientHeight}`;
+					if (main && sidebar) {
+						return `+=${main.clientHeight - sidebar.clientHeight}`;
 					}
 
 					return 0;
