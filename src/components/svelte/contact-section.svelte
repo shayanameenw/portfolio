@@ -13,8 +13,8 @@ useEffect(() => {
 		["#contact-heading", "#contact-info", ".divider", "#contact-paragraph"],
 		{
 			ease: "power3.inOut",
-			duration: 1,
-			stagger: 0.5,
+			duration: 0.5,
+			stagger: 0.25,
 			opacity: 1,
 			y: 0,
 		},
@@ -22,12 +22,12 @@ useEffect(() => {
 });
 </script>
 
-<section class="min-h-[calc(100vh_-_69px)] lg:min-h-screen overflow-hidden">
-  <div class="p-8 lg:p-16">
-    <h3 id="contact-heading" class="opacity-0 translate-y-[100vh] px-2 lg:px-0 py-8 text-7xl md:text-[8rem]">
+<section class="overflow-hidden">
+  <div class="p-2 lg:p-16">
+    <h3 id="contact-heading" class="opacity-0 translate-y-full px-2 lg:px-0 py-8 text-7xl md:text-[8rem]">
       Contact
     </h3>
-    <div id="contact-info" class="opacity-0 translate-y-[100vh] px-4 py-12 flex flex-col lg:flex-row gap-8">
+    <div id="contact-info" class="opacity-0 translate-y-full px-4 mb-12 flex flex-col lg:flex-row gap-8">
       <div class="flex-1 space-y-4 text-xl md:text-3xl">
         <h4>
           The Netherlands
@@ -72,8 +72,8 @@ useEffect(() => {
         </p>
       </div>
     </div>
-    <div class="divider opacity-0"></div>
-    <p id="contact-paragraph" class="opacity-0 translate-y-[100vh] px-4 py-12 text-2xl md:text-4xl">
+    <div class="divider opacity-0 mx-4"></div>
+    <p id="contact-paragraph" class="opacity-0 translate-y-full px-4 py-8 text-2xl md:text-4xl">
       Please, do reach out to us. Together we can craft future memories. We love to be your sparring partner and show you how we can bring your ideas to life.
     </p>
   </div>

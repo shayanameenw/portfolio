@@ -9,7 +9,8 @@ import {
 import { Logo } from "~/components/svelte";
 </script>
 
-<footer class="pt-8 lg:pt-16 px-8 lg:px-16 border-t border-gray-7 grid grid-rows-[auto_1fr_auto] grid-cols-4">
+<footer class="pt-8 lg:pt-16 px-0 lg:px-16 lg:border-t border-gray-7 grid grid-rows-[auto_1fr_auto] grid-cols-4">
+  <div class="col-span-full divider opacity-0 lg:hidden mx-8"></div>
   <p class="col-span-2 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300">
     Explore projects
   </p>

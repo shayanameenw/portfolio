@@ -13,7 +13,7 @@ import { isMenuOpenStore } from "~/stores/menu";
 const isMenuOpen = useStore(isMenuOpenStore);
 
 useEffect(() => {
-	const menuTl = gsap.timeline({ defaults: { duration: 1 } });
+	const menuTl = gsap.timeline({ defaults: { duration: 0.5 } });
 
 	if (isMenuOpen.value) {
 		menuTl.fromTo(
