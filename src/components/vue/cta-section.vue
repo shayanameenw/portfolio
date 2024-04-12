@@ -50,7 +50,7 @@ useEffect(() => {
         across 40 countries, we are experts in designing and building world-class interior and museum fit-outs, large
         events, brand experiences and exhibitions.</p>
       <button id="cta-btn"
-              class="lg:col-span-2 p-12 border border-teal-700 rounded-full h-64 w-64 flex justify-center items-center uppercase text-sm transition duration-300 hover:bg-teal-500 hover:text-white">
+        class="lg:col-span-2 p-12 border border-teal-700 rounded-full h-64 w-64 flex justify-center items-center uppercase text-sm transition duration-300 hover:bg-teal-500 hover:text-white">
         Check our Projects
       </button>
     </div>

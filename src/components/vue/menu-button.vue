@@ -23,7 +23,7 @@ useEffect(() => {
 
 <template>
   <button id="menu-btn" class="opacity-0" v-on:click="toggleMenu">
-    <XIcon v-if="isMenuOpen.value"/>
-    <MenuIcon v-else/>
+    <XIcon v-if="isMenuOpen.value" />
+    <MenuIcon v-else />
   </button>
 </template>

@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 import {
 	ArrowDownLeftIcon,
 	FacebookIcon,
@@ -9,64 +9,60 @@ import {
 import { Logo } from "~/components/svelte";
 </script>
 
-<footer class="pt-8 lg:pt-16 px-0 lg:px-16 lg:border-t border-gray-7 grid grid-rows-[auto_1fr_auto] grid-cols-4">
-  <div class="col-span-full divider opacity-0 lg:hidden mx-8"></div>
-  <p class="col-span-2 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300">
+<footer
+  class="lg:pt-16 px-0 lg:px-16 lg:border-t border-gray-7 grid grid-rows-[auto_1fr_auto] grid-cols-4"
+>
+  <div class="col-span-full divider lg:hidden mt-4 mx-8"></div>
+  <p
+    class="col-span-2 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300"
+  >
     Explore projects
   </p>
-  <p class="col-span-2 lg:col-span-1 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300">
+  <p
+    class="col-span-2 lg:col-span-1 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300"
+  >
     More about zed
   </p>
-  <p class="col-span-2 lg:col-span-1 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300">
+  <p
+    class="col-span-2 lg:col-span-1 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300"
+  >
     Connect
   </p>
-  <div class="col-span-2 self-start hidden lg:grid justify-items-start items-center">
+  <div
+    class="col-span-2 self-start hidden lg:grid justify-items-start items-center"
+  >
+    <ul class="flex flex-col gap-6 text-xl">
+      <li class="flex gap-2">Bringing delight to Bento Design System</li>
+      <li class="flex gap-2">Leading the IxD & Motion guild</li>
+      <li class="flex gap-2">Envisioning the future of a platform</li>
+      <li class="flex gap-2">Highlights from the past</li>
+    </ul>
+  </div>
+  <div
+    class="col-span-2 lg:col-span-1 self-start hidden lg:grid justify-items-start items-center"
+  >
     <ul class="flex flex-col gap-6 text-xl">
       <li class="flex gap-2">
-        Bringing delight to Bento Design System
+        <a href="/"> Home </a>
       </li>
       <li class="flex gap-2">
-        Leading the IxD & Motion guild
+        <a href="/services"> Services </a>
       </li>
       <li class="flex gap-2">
-        Envisioning the future of a platform
+        <a href="/projects"> Projects </a>
       </li>
       <li class="flex gap-2">
-        Highlights from the past
+        <a href="/contact"> Contact </a>
       </li>
     </ul>
   </div>
-  <div class="col-span-2 lg:col-span-1 self-start hidden lg:grid justify-items-start items-center">
-    <ul class="flex flex-col gap-6 text-xl">
-      <li class="flex gap-2">
-        <a href="/">
-          Home
-        </a>
-      </li>
-      <li class="flex gap-2">
-        <a href="/services">
-          Services
-        </a>
-      </li>
-      <li class="flex gap-2">
-        <a href="/projects">
-          Projects
-        </a>
-      </li>
-      <li class="flex gap-2">
-        <a href="/contact">
-          Contact
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="col-span-2 lg:col-span-1 self-start hidden lg:grid justify-items-start items-center">
+  <div
+    class="col-span-2 lg:col-span-1 self-start hidden lg:grid justify-items-start items-center"
+  >
     <ul class="flex flex-col gap-6 text-xl">
       <li>
         <a class="flex gap-2" href="/">
-          <span>
-            Linkedin
-          </span>
+          <span> Linkedin </span>
           <span>
             <ArrowDownLeftIcon class="rotate-180" size={24} />
           </span>
@@ -74,9 +70,7 @@ import { Logo } from "~/components/svelte";
       </li>
       <li>
         <a class="flex gap-2" href="/">
-          <span>
-            Twitter
-          </span>
+          <span> Twitter </span>
           <span>
             <ArrowDownLeftIcon class="rotate-180" size={24} />
           </span>
@@ -84,9 +78,7 @@ import { Logo } from "~/components/svelte";
       </li>
       <li>
         <a class="flex gap-2" href="/">
-          <span>
-            Facebook
-          </span>
+          <span> Facebook </span>
           <span>
             <ArrowDownLeftIcon class="rotate-180" size={24} />
           </span>
@@ -94,9 +86,7 @@ import { Logo } from "~/components/svelte";
       </li>
       <li>
         <a class="flex gap-2" href="/">
-          <span>
-            Instagram
-          </span>
+          <span> Instagram </span>
           <span>
             <ArrowDownLeftIcon class="rotate-180" size={24} />
           </span>
@@ -120,14 +110,12 @@ import { Logo } from "~/components/svelte";
       </li>
     </ul>
   </div>
-  <div class="col-span-4 border-t border-gray-7 mt-8 lg:mt-16 py-6 flex justify-center lg:justify-between items-center">
+  <div
+    class="col-span-4 border-t border-gray-7 mt-6 lg:mt-16 py-6 flex justify-center lg:justify-between items-center"
+  >
     <ul class="flex gap-4 items-center">
-      <li>
-        &copy; 2024
-      </li>
-      <li>
-        -
-      </li>
+      <li>&copy; 2024</li>
+      <li>-</li>
       <li>
         <Logo />
       </li>

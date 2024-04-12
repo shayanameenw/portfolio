@@ -12,42 +12,41 @@ const { title, description } = Astro.props;
 ---
 
 <script>
-import {isMenuOpenStore} from "~/stores/menu"
+	import { isMenuOpenStore } from "~/stores/menu";
 
-isMenuOpenStore.listen((isMenuOpen) => {
-	const heroSection = document.querySelector("main section:first-child")
-	const sidebar = document.querySelector("aside")
+	isMenuOpenStore.listen((isMenuOpen) => {
+		const heroSection = document.querySelector("main section:first-child");
+		const sidebar = document.querySelector("aside");
 
-	if (document.body.clientWidth > 1024) {
-		heroSection?.scrollIntoView({ behavior: "smooth" })
-	} else {
-		sidebar?.scrollIntoView({ behavior: "smooth" })
-	}
+		if (document.body.clientWidth > 1024) {
+			heroSection?.scrollIntoView({ behavior: "smooth" });
+		} else {
+			sidebar?.scrollIntoView({ behavior: "smooth" });
+		}
 
-
-	document.body.style.height = isMenuOpen ? "100vh" : 'auto'
-	document.body.style.overflow = isMenuOpen ? "hidden" : 'auto'
-});
+		document.body.style.height = isMenuOpen ? "100vh" : "auto";
+		document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
+	});
 </script>
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		
+
 		<meta name="viewport" content="width=device-width" />
-		
+
 		<title>{title}</title>
 
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content={description}>
-		
+		<meta name="description" content={description} />
+
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
 		<ViewTransitions />
 	</head>
 	<body class="flex flex-col lg:flex-row">
 		<Sidebar client:load />
-    <main class="relative flex-1">
+		<main class="relative flex-1">
 			<Menu client:load />
 			<slot />
 			<Footer />

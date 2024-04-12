@@ -33,8 +33,8 @@ useEffect(() => {
 
 <template>
   <aside id="sidebar"
-         class="relative z-50 border-r-0 lg:border-r border-b lg:border-b-0 border-gray-7 py-4 px-8 lg:py-8 lg:h-screen flex flex-row-reverse lg:flex-col justify-between items-center">
-    <MenuButton/>
-    <Logo/>
+    class="relative z-50 border-r-0 lg:border-r border-b lg:border-b-0 border-gray-7 py-4 px-8 lg:py-8 lg:h-screen flex flex-row-reverse lg:flex-col justify-between items-center">
+    <MenuButton />
+    <Logo />
   </aside>
 </template>
