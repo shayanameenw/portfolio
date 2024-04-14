@@ -16,7 +16,8 @@ useEffect(() => {
 
 	const footerTL = gsap.timeline({
 		defaults: {
-			stagger: 0.25,
+			duration: 0.35,
+			stagger: 0.15,
 		},
 		scrollTrigger: {
 			trigger: "footer",
