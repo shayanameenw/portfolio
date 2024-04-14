@@ -41,9 +41,9 @@ useEffect(() => {
   <section id="cta-section" class="py-16 px-8 lg:px-16 lg:grid grid-rows-[1fr_auto_1fr]">
     <div class="grid place-items-center overflow-hidden">
       <h2 id="text-1" class="text-3xl lg:text-5xl leading-loose lg:leading-loose">Zed solutions brings life immersive
-        events and experiences through quality design, production and end-to-end project management.</h2>
-    </div>
-    <div class="divider"></div>
+				events and experiences through quality design, production and end-to-end project management.</h2>
+			</div>
+			<div class="border my-8 border-zinc-900"></div>
     <div class="grid gap-12 lg:grid-cols-6 place-items-center overflow-hidden">
       <p id="text-2" class="lg:col-span-4 text-lg lg:text-2xl leading-loose lg:leading-loose">Trust us to elevate your
         visitors' experience through memorable and immersive experiential design. With over 100 years of experience

@@ -130,9 +130,8 @@ useEffect(() => {
 </script>
 
 <footer
-  class="lg:pt-16 px-0 lg:px-16 lg:border-t border-gray-7 grid grid-rows-[auto_1fr_auto] grid-cols-4"
+  class="lg:pt-16 px-0 lg:px-16 lg:border-t border-zinc-900 grid grid-rows-[auto_1fr_auto] grid-cols-4"
 >
-  <div class="col-span-full divider lg:hidden mt-4 mx-8"></div>
   <h2
     class="col-span-2 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300"
   >
@@ -231,7 +230,7 @@ useEffect(() => {
     </ul>
   </div>
   <div
-    class="col-span-4 border-t border-gray-7 mt-6 lg:mt-16 py-6 flex justify-center lg:justify-between items-center"
+    class="col-span-4 border-t border-zinc-900 mt-6 lg:mt-16 py-6 flex justify-center lg:justify-between items-center"
   >
     <ul id="footer-copyright" class="flex gap-4 items-center">
       <li>&copy; 2024</li>

@@ -1,4 +1,3 @@
-import type { Config as RippleUIConfig } from "rippleui";
 import type { Config as TailwindCSSConfig } from "tailwindcss";
 
 export default {
@@ -6,10 +5,4 @@ export default {
 	theme: {
 		extend: {},
 	},
-
-	plugins: [require("rippleui")],
-
-	rippleui: {
-		removeThemes: ["light"],
-	} satisfies RippleUIConfig,
 } satisfies TailwindCSSConfig;

@@ -4,7 +4,7 @@ import { useEffect } from "~/hooks/core.svelte";
 import Project from "./project.svelte";
 
 useEffect(() => {
-	gsap.to(["#projects-heading", "#projects-paragraph", ".divider"], {
+	gsap.to(["#projects-heading", "#projects-paragraph"], {
 		ease: "power3.inOut",
 		duration: 0.75,
 		stagger: 0.25,
@@ -32,7 +32,6 @@ useEffect(() => {
       concept to delivery, led by values in sustainability, quality and
       proactive project management
     </p>
-    <div class="divider opacity-0 mx-4 mb-16"></div>
     <div class="px-4 grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
       {#each [0,1,2,3,4,5,6,7,8,9] as item, index}
         <Project item={index} />

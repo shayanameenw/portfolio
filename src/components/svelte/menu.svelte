@@ -54,7 +54,7 @@ useEffect(() => {
 {#if isMenuOpen.value}
   <section
     id="menu"
-    class="absolute z-50 top-0 left-0 right-0 py-28 px-8 lg:px-28 h-[calc(100vh_-_69px)] lg:h-screen flex flex-col-reverse lg:flex-row gap-20 lg:gap-4 bg-backgroundPrimary"
+    class="absolute z-50 top-0 left-0 right-0 py-28 px-8 lg:px-28 h-[calc(100vh_-_69px)] lg:h-screen flex flex-col-reverse lg:flex-row gap-20 lg:gap-4 bg-black"
   >
     <div class="flex-1 flex flex-col justify-between gap-12">
       <div class="flex flex-col gap-4 lg:gap-8">

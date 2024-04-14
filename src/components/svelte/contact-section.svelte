@@ -9,16 +9,13 @@ import {
 import { useEffect } from "~/hooks/core.svelte";
 
 useEffect(() => {
-	gsap.to(
-		["#contact-heading", "#contact-info", ".divider", "#contact-paragraph"],
-		{
-			ease: "power3.inOut",
-			duration: 0.75,
-			stagger: 0.25,
-			opacity: 1,
-			y: 0,
-		},
-	);
+	gsap.to(["#contact-heading", "#contact-info", "#contact-paragraph"], {
+		ease: "power3.inOut",
+		duration: 0.75,
+		stagger: 0.25,
+		opacity: 1,
+		y: 0,
+	});
 });
 </script>
 
@@ -64,7 +61,6 @@ useEffect(() => {
         </p>
       </div>
     </div>
-    <div class="divider opacity-0 mx-6 lg:mx-2"></div>
     <p
       id="contact-paragraph"
       class="opacity-0 translate-y-full px-4 py-8 text-lg lg:text-2xl leading-loose lg:leading-loose"

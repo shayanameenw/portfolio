@@ -4,7 +4,7 @@ import { useEffect } from "~/hooks/core.svelte";
 import Service from "./service.svelte";
 
 useEffect(() => {
-	gsap.to(["#services-heading", "#services-paragraph", ".divider"], {
+	gsap.to(["#services-heading", "#services-paragraph"], {
 		ease: "power3.inOut",
 		duration: 0.75,
 		stagger: 0.25,
@@ -32,7 +32,7 @@ useEffect(() => {
       concept to delivery, led by values in sustainability, quality and
       proactive project management
     </p>
-    <div class="divider opacity-0 mx-4 mb-16"></div>
+    <div class="opacity-0 mx-4 mb-16"></div>
     {#each [0, 1, 2] as item, index}
       <Service item={index} />
     {/each}
