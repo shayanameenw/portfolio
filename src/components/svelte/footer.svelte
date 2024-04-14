@@ -20,59 +20,84 @@ useEffect(() => {
 		},
 		scrollTrigger: {
 			trigger: "footer",
-			start: "top 85%",
+			start: "top 95%",
 		},
 	});
 
-	footerTL.fromTo(
-		"footer > h2",
-		{
-			opacity: 0,
-			yPercent: 25,
-		},
-		{
-			opacity: 1,
-			yPercent: 0,
-		},
-	);
+	const mm = gsap.matchMedia();
 
-	footerTL.fromTo(
-		"#footer-projects-links > li",
-		{
-			opacity: 0,
-			yPercent: 25,
-		},
-		{
-			opacity: 1,
-			yPercent: 0,
-		},
-	);
+	mm.add("(min-width: 1024px)", () => {
+		footerTL.fromTo(
+			"footer > h2",
+			{
+				opacity: 0,
+				yPercent: 25,
+			},
+			{
+				opacity: 1,
+				yPercent: 0,
+			},
+		);
+	});
 
-	footerTL.fromTo(
-		"#footer-pages-links > li",
-		{
-			opacity: 0,
-			yPercent: 25,
-		},
-		{
-			opacity: 1,
-			yPercent: 0,
-		},
-		"<",
-	);
+	mm.add("(min-width: 1024px)", () => {
+		footerTL.fromTo(
+			"#footer-projects-links > li",
+			{
+				opacity: 0,
+				yPercent: 25,
+			},
+			{
+				opacity: 1,
+				yPercent: 0,
+			},
+		);
+	});
 
-	footerTL.fromTo(
-		"#footer-social-links > li",
-		{
-			opacity: 0,
-			yPercent: 25,
-		},
-		{
-			opacity: 1,
-			yPercent: 0,
-		},
-		"<",
-	);
+	mm.add("(min-width: 1024px)", () => {
+		footerTL.fromTo(
+			"#footer-pages-links > li",
+			{
+				opacity: 0,
+				yPercent: 25,
+			},
+			{
+				opacity: 1,
+				yPercent: 0,
+			},
+			"<",
+		);
+	});
+
+	mm.add("(min-width: 1024px)", () => {
+		footerTL.fromTo(
+			"#footer-social-links:first-child > li",
+			{
+				opacity: 0,
+				yPercent: 25,
+			},
+			{
+				opacity: 1,
+				yPercent: 0,
+			},
+			"<",
+		);
+	});
+
+	mm.add("(max-width: 1024px)", () => {
+		footerTL.fromTo(
+			"#footer-social-links:last-child > li",
+			{
+				opacity: 0,
+				yPercent: 25,
+			},
+			{
+				opacity: 1,
+				yPercent: 0,
+			},
+			"<",
+		);
+	});
 
 	footerTL.fromTo(
 		"#footer-copyright",
@@ -84,21 +109,22 @@ useEffect(() => {
 			opacity: 1,
 			yPercent: 0,
 		},
-		"<",
 	);
 
-	footerTL.fromTo(
-		"#footer-terms-links > li",
-		{
-			opacity: 0,
-			yPercent: 25,
-		},
-		{
-			opacity: 1,
-			yPercent: 0,
-		},
-		"<",
-	);
+	mm.add("(min-width: 1024px)", () => {
+		footerTL.fromTo(
+			"#footer-terms-links > li",
+			{
+				opacity: 0,
+				yPercent: 25,
+			},
+			{
+				opacity: 1,
+				yPercent: 0,
+			},
+			"<",
+		);
+	});
 });
 </script>
 

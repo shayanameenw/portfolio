@@ -6,7 +6,7 @@ const LOGO = "zedsols.";
 
 <h1 {id} class={`${className} tracking-widest`}>
   {#each LOGO.split("") as letter}
-    <span class={`${letter === "." ? "text-teal-700" : ""}`}>
+    <span class={`${letter === "." ? "font-bold text-[1em] text-teal-700" : ""}`}>
       {letter}
     </span>
   {/each}

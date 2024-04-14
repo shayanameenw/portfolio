@@ -38,7 +38,7 @@ useEffect(() => {
 			"#menu-social-links > li",
 			{ opacity: 0, yPercent: 25 },
 			{ opacity: 1, yPercent: 0, stagger: 0.15 },
-			"-=.25",
+			"-=0.25",
 		);
 
 		menuTl.fromTo(
