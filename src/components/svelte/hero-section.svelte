@@ -62,9 +62,9 @@ useEffect(() => {
 >
   <div class="p-2 lg:p-16 row-span-3 col-span-3 grid place-items-center">
     <h3 id="heading" class="relative z-10 py-8 text-7xl md:text-[8rem]">
-      <span class="block opacity-0"> Crafting </span>
-      <span class="block opacity-0"> future </span>
-      <span class="block opacity-0"> businesses </span>
+      <span class="block opacity-0 neonTextType1"> Crafting </span>
+      <span class="block opacity-0 neonTextType2"> future </span>
+      <span class="block opacity-0 neonTextType3"> businesses </span>
     </h3>
   </div>
   <div id="embla" class="opacity-0 embla row-span-2 col-span-2">
@@ -157,4 +157,42 @@ useEffect(() => {
     width: 100%;
     object-fit: cover;
   }
+
+  .neonTextType1 {
+      color: #fff;
+      text-shadow:
+        0 0 7px #fff,
+        /* 0 0 10px #fff,
+        0 0 21px #fff, */
+        0 0 42px #0fa,
+        /* 0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa, */
+        0 0 151px #0fa;
+  }  
+  .neonTextType2 {
+    color: #0fa;
+    text-shadow:
+      0 0 7px #fff,
+      /* 0 0 10px #fff, */
+      /* 0 0 21px #fff, */
+      0 0 42px #0fa,
+      /* 0 0 82px #0fa, */
+      /* 0 0 92px #0fa, */
+      /* 0 0 102px #0fa, */
+      0 0 151px #0fa;
+  }
+
+  .neonTextType3 {
+    color: #fff;
+    text-shadow:
+      /* 0 0 7px #fff, */
+      /* 0 0 10px #fff, */
+      /* 0 0 21px #fff, */
+      0 0 42px #0fa,
+      /* 0 0 82px #0fa, */
+      0 0 92px #0fa,
+      /* 0 0 102px #0fa, */
+      0 0 151px #0fa;
+  } 
 </style>
