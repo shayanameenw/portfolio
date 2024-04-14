@@ -87,7 +87,7 @@ useEffect(() => {
 
 	mm.add("(max-width: 1024px)", () => {
 		footerTL.fromTo(
-			"#footer-social-links:last-child > li",
+			"#footer-social-links:first-child > li",
 			{
 				opacity: 0,
 				yPercent: 25,
@@ -130,7 +130,7 @@ useEffect(() => {
 </script>
 
 <footer
-  class="lg:pt-16 px-0 lg:px-16 lg:border-t border-zinc-900 grid grid-rows-[auto_1fr_auto] grid-cols-4"
+  class="mt-8 lg:pt-16 px-8 lg:px-16 border-t border-zinc-900 grid grid-cols-4"
 >
   <h2
     class="col-span-2 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300"
@@ -213,25 +213,23 @@ useEffect(() => {
       </li>
     </ul>
   </div>
-  <div class="col-span-4">
+  <div
+    class="col-span-4 lg:mt-16 py-4 lg:py-8 lg:border-t border-zinc-900 flex justify-between items-center"
+  >
     <ul id="footer-social-links" class="flex lg:hidden gap-4 justify-center items-center">
       <li>
-        <LinkedinIcon />
+        <LinkedinIcon size={12} />
       </li>
       <li>
-        <TwitterIcon />
+        <TwitterIcon size={12} />
       </li>
       <li>
-        <FacebookIcon />
+        <FacebookIcon size={12} />
       </li>
       <li>
-        <InstagramIcon />
+        <InstagramIcon size={12} />
       </li>
     </ul>
-  </div>
-  <div
-    class="col-span-4 border-t border-zinc-900 mt-6 lg:mt-16 py-6 flex justify-center lg:justify-between items-center"
-  >
     <ul id="footer-copyright" class="flex gap-4 items-center">
       <li>&copy; 2024</li>
       <li>-</li>
