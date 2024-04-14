@@ -58,9 +58,6 @@ devDependencies:
   astro:
     specifier: npm:astro@latest
     version: 4.5.18(@types/node@20.12.7)(typescript@5.4.4)
-  rippleui:
-    specifier: npm:rippleui@latest
-    version: 1.12.1
   svelte:
     specifier: npm:svelte@next
     version: 5.0.0-next.96
@@ -1405,12 +1402,6 @@ packages:
     resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
     dependencies:
       undici-types: 5.26.5
-    dev: true
-
-  /@types/postcss-js@4.0.4:
-    resolution: {integrity: sha512-j5+GMZVIPCJpRTwI/mO64mCzv7X+zAEq3JP0EV2lo/BrLWHAohEubUJimIAY23rH27+wKce0fXUYjAdBoqlaYw==}
-    dependencies:
-      postcss: 8.4.38
     dev: true
 
   /@types/unist@2.0.10:
@@ -4336,17 +4327,6 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
-    dev: true
-
-  /rippleui@1.12.1:
-    resolution: {integrity: sha512-2LLqGQy0Gb+V/XHC+Ucx7rKcgisTr1HBevVc+NiwTiJn4y38Ya1cad8I/ZZHfWbrvKG/bPKYh+XJCM8M4cUs0A==}
-    dependencies:
-      '@types/postcss-js': 4.0.4
-      postcss: 8.4.38
-      postcss-js: 4.0.1(postcss@8.4.38)
-      tailwindcss: 3.4.3
-    transitivePeerDependencies:
-      - ts-node
     dev: true
 
   /rollup@4.14.1:

@@ -32,7 +32,6 @@
 		"@biomejs/biome": "^1.6.4",
 		"@types/node": "^20.12.7",
 		"astro": "npm:astro@latest",
-		"rippleui": "npm:rippleui@latest",
 		"svelte": "npm:svelte@next",
 		"tailwindcss": "npm:tailwindcss@latest",
 		"typescript": "npm:typescript@latest",
