@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource-variable/raleway':
+    specifier: ^5.0.18
+    version: 5.0.18
   embla-carousel:
     specifier: npm:embla-carousel@latest
     version: 8.0.2
@@ -1082,6 +1085,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource-variable/raleway@5.0.18:
+    resolution: {integrity: sha512-gd1W+taHZoWe6FoqdbMogSYfp8FK4WUsFse43zvM4NC3s5IoQBdGlMB7XGTdiNux+Ult1wkrlYpiSedSWLjSMw==}
+    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}

@@ -1,17 +1,13 @@
 <script lang="ts">
-const { class: className }: { class?: string } = $props();
+const { class: className, id }: { class?: string; id?: string } = $props();
 
-const LOGO = "zedsols";
+const LOGO = "zedsols.";
 </script>
 
-<h1 class={className}>
+<h1 {id} class={`${className} tracking-widest`}>
   {#each LOGO.split("") as letter}
-    <span>
+    <span class={`${letter === "." ? "text-teal-700" : ""}`}>
       {letter}
     </span>
-    <span>
-      {" "}
-    </span>
   {/each}
-  <span class="font-black text-[1em] text-teal-700"> . </span>
 </h1>

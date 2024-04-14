@@ -1,4 +1,6 @@
 <script lang="ts">
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import {
 	ArrowDownLeftIcon,
 	FacebookIcon,
@@ -7,31 +9,122 @@ import {
 	TwitterIcon,
 } from "lucide-svelte";
 import { Logo } from "~/components/svelte";
+import { useEffect } from "~/hooks/core.svelte";
+
+useEffect(() => {
+	gsap.registerPlugin(ScrollTrigger);
+
+	const footerTL = gsap.timeline({
+		defaults: {
+			stagger: 0.25,
+		},
+		scrollTrigger: {
+			trigger: "footer",
+			start: "top 85%",
+		},
+	});
+
+	footerTL.fromTo(
+		"footer > h2",
+		{
+			opacity: 0,
+			yPercent: 25,
+		},
+		{
+			opacity: 1,
+			yPercent: 0,
+		},
+	);
+
+	footerTL.fromTo(
+		"#footer-projects-links > li",
+		{
+			opacity: 0,
+			yPercent: 25,
+		},
+		{
+			opacity: 1,
+			yPercent: 0,
+		},
+	);
+
+	footerTL.fromTo(
+		"#footer-pages-links > li",
+		{
+			opacity: 0,
+			yPercent: 25,
+		},
+		{
+			opacity: 1,
+			yPercent: 0,
+		},
+		"<",
+	);
+
+	footerTL.fromTo(
+		"#footer-social-links > li",
+		{
+			opacity: 0,
+			yPercent: 25,
+		},
+		{
+			opacity: 1,
+			yPercent: 0,
+		},
+		"<",
+	);
+
+	footerTL.fromTo(
+		"#footer-copyright",
+		{
+			opacity: 0,
+			yPercent: 25,
+		},
+		{
+			opacity: 1,
+			yPercent: 0,
+		},
+		"<",
+	);
+
+	footerTL.fromTo(
+		"#footer-terms-links > li",
+		{
+			opacity: 0,
+			yPercent: 25,
+		},
+		{
+			opacity: 1,
+			yPercent: 0,
+		},
+		"<",
+	);
+});
 </script>
 
 <footer
   class="lg:pt-16 px-0 lg:px-16 lg:border-t border-gray-7 grid grid-rows-[auto_1fr_auto] grid-cols-4"
 >
   <div class="col-span-full divider lg:hidden mt-4 mx-8"></div>
-  <p
+  <h2
     class="col-span-2 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300"
   >
     Explore projects
-  </p>
-  <p
+  </h2>
+  <h2
     class="col-span-2 lg:col-span-1 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300"
   >
     More about zed
-  </p>
-  <p
+  </h2>
+  <h2
     class="col-span-2 lg:col-span-1 self-end mb-4 hidden lg:block font-bold text-sm text-teal-300"
   >
     Connect
-  </p>
+  </h2>
   <div
     class="col-span-2 self-start hidden lg:grid justify-items-start items-center"
   >
-    <ul class="flex flex-col gap-6 text-xl">
+    <ul id="footer-projects-links" class="flex flex-col gap-6 text-xl">
       <li class="flex gap-2">Bringing delight to Bento Design System</li>
       <li class="flex gap-2">Leading the IxD & Motion guild</li>
       <li class="flex gap-2">Envisioning the future of a platform</li>
@@ -41,7 +134,7 @@ import { Logo } from "~/components/svelte";
   <div
     class="col-span-2 lg:col-span-1 self-start hidden lg:grid justify-items-start items-center"
   >
-    <ul class="flex flex-col gap-6 text-xl">
+    <ul id="footer-pages-links" class="flex flex-col gap-6 text-xl">
       <li class="flex gap-2">
         <a href="/"> Home </a>
       </li>
@@ -59,7 +152,7 @@ import { Logo } from "~/components/svelte";
   <div
     class="col-span-2 lg:col-span-1 self-start hidden lg:grid justify-items-start items-center"
   >
-    <ul class="flex flex-col gap-6 text-xl">
+    <ul id="footer-social-links" class="flex flex-col gap-6 text-xl">
       <li>
         <a class="flex gap-2" href="/">
           <span> Linkedin </span>
@@ -95,7 +188,7 @@ import { Logo } from "~/components/svelte";
     </ul>
   </div>
   <div class="col-span-4">
-    <ul class="flex lg:hidden gap-4 justify-center items-center">
+    <ul id="footer-social-links" class="flex lg:hidden gap-4 justify-center items-center">
       <li>
         <LinkedinIcon />
       </li>
@@ -113,14 +206,14 @@ import { Logo } from "~/components/svelte";
   <div
     class="col-span-4 border-t border-gray-7 mt-6 lg:mt-16 py-6 flex justify-center lg:justify-between items-center"
   >
-    <ul class="flex gap-4 items-center">
+    <ul id="footer-copyright" class="flex gap-4 items-center">
       <li>&copy; 2024</li>
       <li>-</li>
       <li>
         <Logo />
       </li>
     </ul>
-    <ul class="hidden lg:flex gap-8 items-center">
+    <ul id="footer-terms-links" class="hidden lg:flex gap-8 items-center">
       <li>Privacy Policy</li>
       <li>Terms & Conditions</li>
     </ul>

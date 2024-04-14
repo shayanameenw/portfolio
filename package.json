@@ -13,6 +13,7 @@
 		"biome": "biome"
 	},
 	"dependencies": {
+		"@fontsource-variable/raleway": "^5.0.18",
 		"embla-carousel": "npm:embla-carousel@latest",
 		"embla-carousel-autoplay": "npm:embla-carousel-autoplay@latest",
 		"embla-carousel-class-names": "npm:embla-carousel-class-names@latest",
