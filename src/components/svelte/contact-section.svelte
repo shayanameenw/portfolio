@@ -13,7 +13,7 @@ useEffect(() => {
 		["#contact-heading", "#contact-info", ".divider", "#contact-paragraph"],
 		{
 			ease: "power3.inOut",
-			duration: 0.5,
+			duration: 0.75,
 			stagger: 0.25,
 			opacity: 1,
 			y: 0,
@@ -64,11 +64,11 @@ useEffect(() => {
         </p>
       </div>
     </div>
-    <div class="divider opacity-0 mx-4"></div>
+    <div class="divider opacity-0 mx-6 lg:mx-2"></div>
     <p
       id="contact-paragraph"
-      class="opacity-0 translate-y-full px-4 py-8 text-2xl md:text-4xl"
-    >
+      class="opacity-0 translate-y-full px-4 py-8 text-lg lg:text-2xl leading-loose lg:leading-loose"
+      >
       Please, do reach out to us. Together we can craft future memories. We love
       to be your sparring partner and show you how we can bring your ideas to
       life.

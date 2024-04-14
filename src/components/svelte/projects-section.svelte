@@ -6,7 +6,7 @@ import Project from "./project.svelte";
 useEffect(() => {
 	gsap.to(["#projects-heading", "#projects-paragraph", ".divider"], {
 		ease: "power3.inOut",
-		duration: 0.5,
+		duration: 0.75,
 		stagger: 0.25,
 		opacity: 1,
 		y: 0,
@@ -18,13 +18,13 @@ useEffect(() => {
   <div class="p-2 lg:p-16">
     <h3
       id="projects-heading"
-      class="opacity-0 translate-y-full px-2 lg:px-0 py-8 text-7xl md:text-[8rem]"
+      class="opacity-0 translate-y-1/4 px-2 lg:px-0 py-8 text-7xl md:text-[8rem]"
     >
       Our Projects
     </h3>
     <p
       id="projects-paragraph"
-      class="opacity-0 translate-y-full px-4 pb-12 text-lg lg:text-2xl leading-loose lg:leading-loose"
+      class="opacity-0 translate-y-1/4 px-4 pb-12 text-lg lg:text-2xl leading-loose lg:leading-loose"
     >
       A production company with a difference. From museum and interior fit-out
       to immersive brand experiences, we bring your story to life through
