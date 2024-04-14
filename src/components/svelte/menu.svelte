@@ -13,7 +13,7 @@ import { isMenuOpenStore } from "~/stores/menu";
 const isMenuOpen = useStore(isMenuOpenStore);
 
 useEffect(() => {
-	const menuTl = gsap.timeline({ defaults: { duration: 0.5 } });
+	const menuTl = gsap.timeline({ defaults: { duration: 0.35 } });
 
 	if (isMenuOpen.value) {
 		menuTl.fromTo(
@@ -37,14 +37,14 @@ useEffect(() => {
 		menuTl.fromTo(
 			"#menu-social-links > li",
 			{ opacity: 0, yPercent: 25 },
-			{ opacity: 1, yPercent: 0, stagger: 0.25 },
+			{ opacity: 1, yPercent: 0, stagger: 0.15 },
 			"-=.25",
 		);
 
 		menuTl.fromTo(
 			"#menu-pages-links > li",
 			{ opacity: 0, yPercent: 25 },
-			{ opacity: 1, yPercent: 0, stagger: 0.25 },
+			{ opacity: 1, yPercent: 0, stagger: 0.15 },
 			"<",
 		);
 	}
