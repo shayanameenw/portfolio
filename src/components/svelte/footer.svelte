@@ -12,7 +12,8 @@ import Logo from "~/components/svelte/logo.svelte";
 import { useEffect } from "~/hooks/core.svelte";
 
 useEffect(() => {
-	gsap.register(ScrollTrigger);
+	// @ts-ignore
+	gsap.registerPlugin(ScrollTrigger);
 
 	const footerTL = gsap.timeline({
 		defaults: {

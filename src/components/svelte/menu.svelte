@@ -9,6 +9,7 @@ import {
 import Logo from "~/components/svelte/logo.svelte";
 import { useEffect, useStore } from "~/hooks/core.svelte";
 import { isMenuOpenStore } from "~/stores/menu";
+import { pagesLinks, socialLinks, tagline } from "~/content/common.ts";
 
 const isMenuOpen = useStore(isMenuOpenStore);
 
@@ -59,22 +60,21 @@ useEffect(() => {
     <div class="flex-1 flex flex-col justify-between gap-12">
       <div class="flex flex-col gap-4 lg:gap-8">
         <h3 id="menu-tag-line" class="overflow-hidden text-xl lg:text-3xl">
-          <span class="block"> Crafting future </span>
-          <span class="block"> businesses </span>
+          <span class="block">
+            {#each tagline.split(" ").slice(0,2) as word }
+               {word} {" "}
+            {/each}
+          </span>
+          <span class="block"> {tagline.split(" ")[tagline.split(" ").length - 1]} </span>
         </h3>
         <ul id="menu-social-links" class="flex gap-4 items-center">
-          <li class="overflow-hidden">
-            <LinkedinIcon />
-          </li>
-          <li class="overflow-hidden">
-            <TwitterIcon />
-          </li>
-          <li class="overflow-hidden">
-            <FacebookIcon />
-          </li>
-          <li class="overflow-hidden">
-            <InstagramIcon />
-          </li>
+          {#each socialLinks as {url, SvelteIcon}}
+            <li class="overflow-hidden">
+              <a href={url}>
+                <SvelteIcon />
+              </a>
+            </li>
+          {/each}
         </ul>
       </div>
       <div>
@@ -83,46 +83,18 @@ useEffect(() => {
     </div>
     <div>
       <ul id="menu-pages-links" class="flex flex-col gap-8 lg:gap-12 text-5xl">
-        <li class="overflow-hidden flex gap-2 lg:justify-end">
-          <a
-            on:click={() => {
-              isMenuOpen.value = false;
-            }}
-            href="/"
-          >
-            Home
-          </a>
-        </li>
-        <li class="overflow-hidden flex gap-2 lg:justify-end">
-          <a
-            on:click={() => {
-              isMenuOpen.value = false;
-            }}
-            href="/services"
-          >
-            Services
-          </a>
-        </li>
-        <li class="overflow-hidden flex gap-2 lg:justify-end">
-          <a
-            on:click={() => {
-              isMenuOpen.value = false;
-            }}
-            href="/projects"
-          >
-            Projects
-          </a>
-        </li>
-        <li class="overflow-hidden flex gap-2 lg:justify-end">
-          <a
-            on:click={() => {
-              isMenuOpen.value = false;
-            }}
-            href="/contact"
-          >
-            Contact
-          </a>
-        </li>
+        {#each pagesLinks as page}
+          <li class="overflow-hidden flex gap-2 lg:justify-end">
+            <a
+                    on:click={() => {
+                isMenuOpen.value = false;
+              }}
+                    href={page.url}
+            >
+              {page.label}
+            </a>
+          </li>
+          {/each}
       </ul>
     </div>
   </section>
