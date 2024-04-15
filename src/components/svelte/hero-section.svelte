@@ -5,13 +5,15 @@ import ClassNames from "embla-carousel-class-names";
 
 import gsap from "gsap";
 import { useEffect, useMount } from "~/hooks/core.svelte";
+import { tagline } from "~/content/common.ts";
 
 useMount(() => {
 	const emblaNode = document.querySelector(".embla");
-	const viewportNode = emblaNode?.querySelector(".embla__viewport") as
-		| HTMLElement
-		| null
-		| undefined;
+	let viewportNode: HTMLElement | null | undefined;
+
+	if (emblaNode) {
+		viewportNode = emblaNode?.querySelector(".embla__viewport");
+	}
 
 	const options: EmblaOptionsType = {
 		axis: "y",
@@ -62,9 +64,9 @@ useEffect(() => {
 >
   <div class="p-2 lg:p-16 row-span-3 col-span-3 grid place-items-center">
     <h3 id="heading" class="relative z-10 py-8 text-7xl md:text-[8rem]">
-      <span class="block opacity-0 neonTextType1"> Crafting </span>
-      <span class="block opacity-0 neonTextType1"> future </span>
-      <span class="block opacity-0 neonTextType3"> businesses </span>
+      {#each tagline.split(" ") as word}
+        <span class="block opacity-0"> {word} </span>
+      {/each}
     </h3>
   </div>
   <div id="embla" class="opacity-0 embla row-span-2 col-span-2">

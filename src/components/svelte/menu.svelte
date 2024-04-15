@@ -6,7 +6,7 @@ import {
 	LinkedinIcon,
 	TwitterIcon,
 } from "lucide-svelte";
-import { Logo } from "~/components/svelte";
+import Logo from "~/components/svelte/logo.svelte";
 import { useEffect, useStore } from "~/hooks/core.svelte";
 import { isMenuOpenStore } from "~/stores/menu";
 

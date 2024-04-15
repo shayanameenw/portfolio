@@ -8,11 +8,11 @@ import {
 	LinkedinIcon,
 	TwitterIcon,
 } from "lucide-svelte";
-import { Logo } from "~/components/svelte";
+import Logo from "~/components/svelte/logo.svelte";
 import { useEffect } from "~/hooks/core.svelte";
 
 useEffect(() => {
-	gsap.registerPlugin(ScrollTrigger);
+	gsap.register(ScrollTrigger);
 
 	const footerTL = gsap.timeline({
 		defaults: {
@@ -25,7 +25,7 @@ useEffect(() => {
 		},
 	});
 
-	const mm = gsap.matchMedia();
+	const mm = gsap.matchMedia("");
 
 	mm.add("(min-width: 1024px)", () => {
 		footerTL.fromTo(

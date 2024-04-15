@@ -1,7 +1,8 @@
 <script setup lang='ts'>
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { Logo, MenuButton } from "~/components/vue";
+import Logo from "~/components/vue/logo.vue";
+import MenuButton from "~/components/vue/menu-button.vue";
 import { useEffect } from "~/hooks/core.vue";
 
 useEffect(() => {
