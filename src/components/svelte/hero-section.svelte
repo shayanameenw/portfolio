@@ -27,7 +27,7 @@ useMount(() => {
 
 useEffect(() => {
 	const headingTL = gsap.timeline({
-		defaults: { duration: 1.5, stagger: 0.25, ease: "power3.inOut" },
+		defaults: { duration: 0.75, stagger: 0.25, ease: "power3.inOut" },
 	});
 
 	headingTL.fromTo(
@@ -38,7 +38,7 @@ useEffect(() => {
 		},
 		{
 			opacity: 1,
-			y: 0,
+			yPercent: 0,
 		},
 	);
 
@@ -50,7 +50,7 @@ useEffect(() => {
 		},
 		{
 			opacity: 1,
-			y: 0,
+			yPercent: 0,
 		},
 		"<",
 	);
