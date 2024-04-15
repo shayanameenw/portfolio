@@ -13,7 +13,7 @@ const isMenuOpen = useStore(isMenuOpenStore);
   isMenuOpen.value = false
 }}>
   {#each LOGO.split("") as letter}
-    <span class={`${letter === "." ? "font-bold text-[1em] text-teal-700" : ""}`}>
+    <span class={`${letter === "." ? "font-bold text-[1em] text-[#fe4164]" : ""}`}>
       {letter}
     </span>
   {/each}

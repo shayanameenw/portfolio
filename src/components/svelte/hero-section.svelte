@@ -111,88 +111,50 @@ useEffect(() => {
 </section>
 
 <style scoped>
-  .embla {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    margin: auto;
-    --slide-height: 100%;
-    --slide-spacing: 0rem;
-    --slide-size: 100%;
-  }
+.embla {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  --slide-height: 100%;
+  --slide-spacing: 0rem;
+  --slide-size: 100%;
+}
 
-  .embla__viewport {
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
-  }
+.embla__viewport {
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
 
-  .embla__container {
-    backface-visibility: hidden;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    touch-action: pan-x;
-    margin-left: calc(var(--slide-spacing) * -1);
-  }
+.embla__container {
+  backface-visibility: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  touch-action: pan-x;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
 
-  .embla__slide {
-    flex: 0 0 var(--slide-size);
-    min-width: 0;
-    padding-left: var(--slide-spacing);
-  }
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
 
-  .embla__slide {
-    opacity: 1;
-    transition: 0.5s opacity 0.25s ease-in-out;
-  }
+.embla__slide {
+  opacity: 1;
+  transition: 0.5s opacity 0.25s ease-in-out;
+}
 
-  .embla__slide:not(.is-snapped) {
-    opacity: 0.5;
-  }
+.embla__slide:not(.is-snapped) {
+  opacity: 0.5;
+ }
 
-  .embla__slide__img {
-    display: block;
-    height: var(--slide-height);
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .neonTextType1 {
-      color: #fff;
-      text-shadow:
-        0 0 7px #fff,
-        /* 0 0 10px #fff,
-        0 0 21px #fff, */
-        0 0 42px #fe4164; 
-        /* 0 0 82px #fe4164,
-        0 0 92px #fe4164,
-        0 0 102px #fe4164, */
-        /* 0 0 151px #fe4164; */
-  }  
-  .neonTextType2 {
-    color: #fe4164;
-    text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      /* 0 0 21px #fff, */
-      /* 0 0 42px #fe4164, */
-      /* 0 0 82px #fe4164, */
-      0 0 92px #fe4164;
-      /* 0 0 102px #fe4164, */
-      /* 0 0 151px #fe4164; */
-  }
-
-  .neonTextType3 {
-    color: #fff;
-    text-shadow:
-      /* 0 0 7px #fff, */
-      /* 0 0 10px #fff, */
-      /* 0 0 21px #fff, */
-      0 0 42px #fe4164,
-      /* 0 0 82px #fe4164, */
-      0 0 92px #fe4164,
-      /* 0 0 102px #fe4164, */
-      0 0 151px #fe4164;
-  } 
+.embla__slide__img {
+  display: block;
+  height: var(--slide-height);
+  width: 100%;
+  object-fit: cover;
+}
 </style>

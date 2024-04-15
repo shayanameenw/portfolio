@@ -36,23 +36,8 @@ useEffect(() => {
     <span class="opacity-0 transition-all" v-for="letter in LOGO.split('')">
       {{ `${letter} ` }}
     </span>
-    <span class="opacity-0 transition-all font-bold text-3xl text-teal-700">
+    <span class="opacity-0 transition-all font-bold text-3xl text-[#fe4164]">
       .
     </span>
   </a>
 </template>
-
-<style scoped>
-.neonText {
-    color: #fff;
-    text-shadow:
-      /* 0 0 7px #fff, */
-      0 0 10px #fff,
-      /* 0 0 21px #fff, */
-      0 0 42px #fe4164,
-      0 0 82px #fe4164,
-      0 0 92px #fe4164,
-      0 0 102px #fe4164,
-      0 0 151px #fe4164;
-  }  
-</style>
