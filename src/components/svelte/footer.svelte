@@ -1,6 +1,6 @@
 <script lang="ts">
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { default as gsap } from "gsap";
+import { default as ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import {
 	ArrowDownLeftIcon,
 	FacebookIcon,
@@ -8,8 +8,10 @@ import {
 	LinkedinIcon,
 	TwitterIcon,
 } from "lucide-svelte";
-import Logo from "~/components/svelte/logo.svelte";
+import { default as Logo } from "~/components/svelte/logo.svelte";
 import { useEffect } from "~/hooks/core.svelte";
+import { highlightProjectsLinks, socialLinks } from "~/content/common.ts";
+import { pagesLinks } from "~/content/common.js";
 
 useEffect(() => {
 	// @ts-ignore
@@ -152,84 +154,53 @@ useEffect(() => {
     class="col-span-2 self-start hidden lg:grid justify-items-start items-center"
   >
     <ul id="footer-projects-links" class="flex flex-col gap-6 text-xl">
-      <li class="flex gap-2">Bringing delight to Bento Design System</li>
-      <li class="flex gap-2">Leading the IxD & Motion guild</li>
-      <li class="flex gap-2">Envisioning the future of a platform</li>
-      <li class="flex gap-2">Highlights from the past</li>
+      {#each highlightProjectsLinks as {url, label}}
+        <li class="flex gap-2">
+          <a href={url}>
+            {label}
+          </a>
+        </li>
+      {/each}
     </ul>
   </div>
   <div
     class="col-span-2 lg:col-span-1 self-start hidden lg:grid justify-items-start items-center"
   >
     <ul id="footer-pages-links" class="flex flex-col gap-6 text-xl">
-      <li class="flex gap-2">
-        <a href="/"> Home </a>
-      </li>
-      <li class="flex gap-2">
-        <a href="/services"> Services </a>
-      </li>
-      <li class="flex gap-2">
-        <a href="/projects"> Projects </a>
-      </li>
-      <li class="flex gap-2">
-        <a href="/contact"> Contact </a>
-      </li>
+      {#each socialLinks as {url, label}}
+        <li class="flex gap-2">
+          <a href={url}>{label}</a>
+        </li>
+      {/each}
     </ul>
   </div>
   <div
     class="col-span-2 lg:col-span-1 self-start hidden lg:grid justify-items-start items-center"
   >
     <ul id="footer-social-links" class="flex flex-col gap-6 text-xl">
-      <li>
-        <a class="flex gap-2" href="/">
-          <span> Linkedin </span>
-          <span>
+      {#each pagesLinks as {url, label}}
+        <li>
+          <a class="flex gap-2" href={url}>
+            <span>{label}</span>
+            <span>
             <ArrowDownLeftIcon class="rotate-180" size={24} />
           </span>
-        </a>
-      </li>
-      <li>
-        <a class="flex gap-2" href="/">
-          <span> Twitter </span>
-          <span>
-            <ArrowDownLeftIcon class="rotate-180" size={24} />
-          </span>
-        </a>
-      </li>
-      <li>
-        <a class="flex gap-2" href="/">
-          <span> Facebook </span>
-          <span>
-            <ArrowDownLeftIcon class="rotate-180" size={24} />
-          </span>
-        </a>
-      </li>
-      <li>
-        <a class="flex gap-2" href="/">
-          <span> Instagram </span>
-          <span>
-            <ArrowDownLeftIcon class="rotate-180" size={24} />
-          </span>
-        </a>
-      </li>
+          </a>
+        </li>
+      {/each}
     </ul>
   </div>
   <div
     class="col-span-4 lg:mt-16 py-4 lg:py-8 lg:border-t border-zinc-900 flex justify-between items-center"
   >
     <ul id="footer-social-links" class="flex lg:hidden gap-4 justify-center items-center">
-      <li>
-        <LinkedinIcon size={12} />
-      </li>
-      <li>
-        <TwitterIcon size={12} />
-      </li>
-      <li>
-        <FacebookIcon size={12} />
-      </li>
-      <li>
-        <InstagramIcon size={12} />
-      </li>
+      {#each socialLinks as {url, SvelteIcon}}
+        <li>
+          <a href={url}>
+            <SvelteIcon size={12} />
+          </a>
+        </li>
+      {/each}
     </ul>
     <ul id="footer-copyright" class="flex gap-4 items-center">
       <li>&copy; 2024</li>

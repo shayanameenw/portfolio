@@ -11,6 +11,25 @@ export const logoSpelling = "zedsols.";
 
 export const tagline = "Crafting future businesses";
 
+export const highlightProjectsLinks = [
+	{
+		url: "/",
+		label: "Bringing delight to Bento Design System\n",
+	},
+	{
+		url: "/",
+		label: "Leading the IxD & Motion guild\n",
+	},
+	{
+		url: "/",
+		label: "Envisioning the future of a platform\n",
+	},
+	{
+		url: "/",
+		label: "Highlights from the past\n",
+	},
+];
+
 export const pagesLinks = [
 	homePageLink,
 	projectsPageLink,
