@@ -21,7 +21,7 @@ export const highlightProjectsLinks = [
 		label: "Leading the IxD & Motion guild\n",
 	},
 	{
-		url: "/",
+		url: "/about",
 		label: "Envisioning the future of a platform\n",
 	},
 	{
