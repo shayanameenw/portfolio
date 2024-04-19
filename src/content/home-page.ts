@@ -30,6 +30,7 @@ export const heroSection = {
 };
 
 export const ctaSection = {
-	quote: `"Zed solutions brings life immersive events and experiences through quality design, production and end-to-end project management."`,
-	para: `Trust us to elevate your visitors' experience through memorable and immersive experiential design. With over 100 years of experience across 40 countries, we are experts in designing and building world-class interior and museum fit-outs, large events, brand experiences and exhibitions.`,
+	quote: `"Embark on a journey of revolutionary innovation with Zedsols, where we offer tailored software solutions crafted to meet your unique needs, delivered with efficiency and passion."
+	`,
+	para: `We're dedicated to creating innovative software solutions that drive real-world results for businesses like yours. Our team is committed to excellence in every project, delivering exceptional results that exceed expectations. From bespoke applications to scalable cloud solutions, we're here to empower your business.`,
 };

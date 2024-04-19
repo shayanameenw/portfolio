@@ -31,9 +31,6 @@ export const servicesSection = {
 			],
 		},
 	],
-	para: `A production company with a difference. From museum and interior fit-out
-      to immersive brand experiences, we bring your story to life through
-      bespoke design and build services. A complete turnkey offering from
-      concept to delivery, led by values in sustainability, quality and
-      proactive project management`,
+	para: `A comprehensive range of software solutions designed to satisfy your business demands is provided by Zedsols. We provide creative solutions that provide outcomes, ranging from web design, cloud computing, e-commerce, and mobile app and bespoke software development to consulting services.Our team is committed to working together with you every step of the way to realize your vision, Allow us to assist you in turning your concepts into reality.
+	`,
 };

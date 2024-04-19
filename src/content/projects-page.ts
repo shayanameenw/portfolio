@@ -37,5 +37,5 @@ export const projectsSection = {
 			image: "https://picsum.photos/600/350?v=5",
 		},
 	],
-	para: "A production company with a difference. From museum and interior fit-out to immersive brand experiences, we bring your story to life through bespoke design and build projects. A complete turnkey offering from concept to delivery, led by values in sustainability, quality and proactive project management",
+	para: "See our collection of finished projects and productive collaborations. Our portfolio, which consists of cloud-based services, mobile apps, websites, and custom software programs, shows the variety of businesses we have worked with and the innovative solutions we have generated. Each project serves as a testament to our commitment to excellence, uniqueness, and client satisfaction. Look more closely to see how we can help you bring your ideas to life and grow your business.",
 };

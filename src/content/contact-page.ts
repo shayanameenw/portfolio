@@ -12,7 +12,6 @@ export const contactSection = {
 	},
 	telephoneNumber: "+31 346 35 75 00",
 	emailAddress: "info@hypsos.museumstudio.com",
-	para: `Please, do reach out to us. Together we can craft future memories. We love
-      to be your sparring partner and show you how we can bring your ideas to
-      life.`,
+	para: `Do you have any questions regarding our services or are you ready to begin your next project? Reach out to us right now! Our staff is available to offer individualized help and support. Whether you prefer to send us an email, give us a call, or visit us in person, we're committed to helping you find the solutions you need to succeed.we look forward to hearing from you!
+	`,
 };
