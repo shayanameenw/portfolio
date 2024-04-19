@@ -1,12 +1,8 @@
 <script lang="ts">
-import gsap from "gsap";
-import {
-	FacebookIcon,
-	InstagramIcon,
-	LinkedinIcon,
-	TwitterIcon,
-} from "lucide-svelte";
+import { default as gsap } from "gsap";
 import { useEffect } from "~/hooks/core.svelte";
+import { contactSection } from "~/content/contact-page.ts";
+import { socialLinks } from "~/content/common.ts";
 
 useEffect(() => {
 	gsap.to(["#contact-heading", "#contact-info", "#contact-paragraph"], {
@@ -32,32 +28,27 @@ useEffect(() => {
       class="opacity-0 translate-y-full px-4 mb-12 flex flex-col lg:flex-row gap-8"
     >
       <div class="flex-1 space-y-4 text-xl md:text-3xl">
-        <h4>The Netherlands</h4>
+        <h4>{contactSection.address.country}</h4>
         <ul class="flex gap-4 items-center px-1">
-          <li>
-            <LinkedinIcon />
-          </li>
-          <li>
-            <TwitterIcon />
-          </li>
-          <li>
-            <FacebookIcon />
-          </li>
-          <li>
-            <InstagramIcon />
-          </li>
+          {#each socialLinks as {url, SvelteIcon}}
+            <li>
+              <a href={url}>
+                <SvelteIcon />
+              </a>
+            </li>
+          {/each}
         </ul>
       </div>
       <div class="flex-1 text-sm md:text-xl">
-        <h4>Centurionbaan 220</h4>
-        <h4>3769 AV Soesterberg, The Netherlands</h4>
+        <h4>{contactSection.address.line1}</h4>
+        <h4>{contactSection.address.line2}</h4>
         <p>
           <span> T: </span>
-          <span> +31 346 35 75 00 </span>
+          <span>{contactSection.telephoneNumber}</span>
         </p>
         <p>
           <span> E: </span>
-          <span> info@hypsos.museumstudio.com </span>
+          <span>{contactSection.emailAddress}</span>
         </p>
       </div>
     </div>
@@ -65,9 +56,7 @@ useEffect(() => {
       id="contact-paragraph"
       class="opacity-0 translate-y-full px-4 py-8 text-lg lg:text-2xl leading-loose lg:leading-loose"
       >
-      Please, do reach out to us. Together we can craft future memories. We love
-      to be your sparring partner and show you how we can bring your ideas to
-      life.
+      {contactSection.para}
     </p>
   </div>
 </section>

@@ -49,7 +49,7 @@ useEffect(() => {
 			<div class="border my-8 border-zinc-900"></div>
     <div class="grid gap-12 lg:grid-cols-6 place-items-center overflow-hidden">
       <p id="text-2" class="lg:col-span-4 text-lg lg:text-2xl leading-loose lg:leading-loose">
-        {{ ctaSection.description }}
+        {{ ctaSection.para }}
       </p>
       <a id="cta-btn" 
         class="lg:col-span-2 p-12 border border-teal-700 rounded-full h-64 w-64 flex justify-center items-center uppercase text-sm transition duration-300 hover:bg-teal-500 hover:text-white"
