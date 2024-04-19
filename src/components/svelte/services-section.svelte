@@ -1,7 +1,8 @@
 <script lang="ts">
 import gsap from "gsap";
 import { useEffect } from "~/hooks/core.svelte";
-import Service from "./service.svelte";
+import { default as Service } from "./service.svelte";
+import { servicesSection } from "~/content/services-page.ts";
 
 useEffect(() => {
 	gsap.to(["#services-heading", "#services-paragraph"], {
@@ -26,15 +27,11 @@ useEffect(() => {
       id="services-paragraph"
       class="opacity-0 translate-y-1/4 px-4 pb-12 text-lg lg:text-2xl leading-loose lg:leading-loose"
     >
-      A production company with a difference. From museum and interior fit-out
-      to immersive brand experiences, we bring your story to life through
-      bespoke design and build services. A complete turnkey offering from
-      concept to delivery, led by values in sustainability, quality and
-      proactive project management
+      {servicesSection.para}
     </p>
     <div class="opacity-0 mx-4 mb-16"></div>
-    {#each [0, 1, 2] as item, index}
-      <Service item={index} />
+    {#each servicesSection.services as item}
+      <Service {item} />
     {/each}
   </div>
 </section>
