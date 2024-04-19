@@ -2,6 +2,7 @@
 import gsap from "gsap";
 import { useEffect } from "~/hooks/core.svelte";
 import Project from "./project.svelte";
+import { projectsSection } from "~/content/projects-page.ts";
 
 useEffect(() => {
 	gsap.to(["#projects-heading", "#projects-paragraph"], {
@@ -26,15 +27,11 @@ useEffect(() => {
       id="projects-paragraph"
       class="opacity-0 translate-y-1/4 px-4 pb-12 text-lg lg:text-2xl leading-loose lg:leading-loose"
     >
-      A production company with a difference. From museum and interior fit-out
-      to immersive brand experiences, we bring your story to life through
-      bespoke design and build projects. A complete turnkey offering from
-      concept to delivery, led by values in sustainability, quality and
-      proactive project management
+      {projectsSection.para}
     </p>
     <div class="px-4 grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
-      {#each [0,1,2,3,4,5,6,7,8,9] as item, index}
-        <Project item={index} />
+      {#each projectsSection.projects as item}
+        <Project {item} />
       {/each}
     </div>
   </div>
