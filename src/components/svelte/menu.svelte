@@ -1,11 +1,5 @@
 <script lang="ts">
 import gsap from "gsap";
-import {
-	FacebookIcon,
-	InstagramIcon,
-	LinkedinIcon,
-	TwitterIcon,
-} from "lucide-svelte";
 import Logo from "~/components/svelte/logo.svelte";
 import { useEffect, useStore } from "~/hooks/core.svelte";
 import { isMenuOpenStore } from "~/stores/menu";

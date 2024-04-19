@@ -3,9 +3,10 @@ import EmblaCarousel, { type EmblaOptionsType } from "embla-carousel";
 import Autoplay from "embla-carousel-autoplay";
 import ClassNames from "embla-carousel-class-names";
 
-import gsap from "gsap";
+import { default as gsap } from "gsap";
 import { useEffect, useMount } from "~/hooks/core.svelte";
 import { tagline } from "~/content/common.ts";
+import { heroSection } from "~/content/home-page.ts";
 
 useMount(() => {
 	const emblaNode = document.querySelector(".embla");
@@ -72,41 +73,15 @@ useEffect(() => {
   <div id="embla" class="opacity-0 embla row-span-2 col-span-2">
     <div class="embla__viewport">
       <div class="embla__container">
-        <div class="embla__slide opacity-0">
-          <img
-            class="embla__slide__img"
-            src="https://picsum.photos/600/350?v=1"
-            alt=""
-          />
-        </div>
-        <div class="embla__slide opacity-0">
-          <img
-            class="embla__slide__img"
-            src="https://picsum.photos/600/350?v=2"
-            alt=""
-          />
-        </div>
-        <div class="embla__slide opacity-0">
-          <img
-            class="embla__slide__img"
-            src="https://picsum.photos/600/350?v=3"
-            alt=""
-          />
-        </div>
-        <div class="embla__slide opacity-0">
-          <img
-            class="embla__slide__img"
-            src="https://picsum.photos/600/350?v=4"
-            alt=""
-          />
-        </div>
-        <div class="embla__slide opacity-0">
-          <img
-            class="embla__slide__img"
-            src="https://picsum.photos/600/350?v=5"
-            alt=""
-          />
-        </div>
+        {#each heroSection.carouselImages as carouselSlide}
+          <div class="embla__slide opacity-0">
+            <img
+                    class="embla__slide__img"
+                    src={carouselSlide.img}
+                    alt={carouselSlide.alt}
+            />
+          </div>
+        {/each}
       </div>
     </div>
   </div>
