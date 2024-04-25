@@ -8,7 +8,7 @@ export const servicesSection = {
 	services: [
 		{
 			id: 1,
-			name: "",
+			name: "Flutter Mobile Apps Development",
 			images: [
 				"https://picsum.photos/600/350?v=1",
 				"https://picsum.photos/600/350?v=2",
@@ -16,7 +16,7 @@ export const servicesSection = {
 		},
 		{
 			id: 2,
-			name: "",
+			name: "KMP Mobile Apps Development",
 			images: [
 				"https://picsum.photos/600/350?v=1",
 				"https://picsum.photos/600/350?v=2",
@@ -24,7 +24,71 @@ export const servicesSection = {
 		},
 		{
 			id: 3,
-			name: "",
+			name: "Dashboard Development",
+			images: [
+				"https://picsum.photos/600/350?v=1",
+				"https://picsum.photos/600/350?v=2",
+			],
+		},
+		{
+			id: 4,
+			name: "Wordpress Development",
+			images: [
+				"https://picsum.photos/600/350?v=1",
+				"https://picsum.photos/600/350?v=2",
+			],
+		},
+		{
+			id: 5,
+			name: "Shopify Web & App Development",
+			images: [
+				"https://picsum.photos/600/350?v=1",
+				"https://picsum.photos/600/350?v=2",
+			],
+		},
+		{
+			id: 6,
+			name: "Wordpress Development",
+			images: [
+				"https://picsum.photos/600/350?v=1",
+				"https://picsum.photos/600/350?v=2",
+			],
+		},
+		{
+			id: 7,
+			name: "Ecommerce Development",
+			images: [
+				"https://picsum.photos/600/350?v=1",
+				"https://picsum.photos/600/350?v=2",
+			],
+		},
+		{
+			id: 8,
+			name: "Backend API Development",
+			images: [
+				"https://picsum.photos/600/350?v=1",
+				"https://picsum.photos/600/350?v=2",
+			],
+		},
+		{
+			id: 9,
+			name: "Web3 API Development",
+			images: [
+				"https://picsum.photos/600/350?v=1",
+				"https://picsum.photos/600/350?v=2",
+			],
+		},
+		{
+			id: 10,
+			name: "Search Engine Optimization",
+			images: [
+				"https://picsum.photos/600/350?v=1",
+				"https://picsum.photos/600/350?v=2",
+			],
+		},
+		{
+			id: 11,
+			name: "UI/UX Design",
 			images: [
 				"https://picsum.photos/600/350?v=1",
 				"https://picsum.photos/600/350?v=2",
