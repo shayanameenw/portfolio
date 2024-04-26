@@ -8,7 +8,7 @@ import { pagesLinks, socialLinks, tagline } from "~/content/common.ts";
 const isMenuOpen = useStore(isMenuOpenStore);
 
 useEffect(() => {
-	const menuTl = gsap.timeline({ defaults: { duration: 0.35 } });
+	const menuTl = gsap.timeline({ defaults: { duration: 0.25 } });
 
 	if (isMenuOpen.value) {
 		menuTl.fromTo(

@@ -11,7 +11,7 @@ function toggleMenu() {
 }
 
 useEffect(() => {
-	const menuBtnTL = gsap.timeline({ defaults: { duration: 0.75 } });
+	const menuBtnTL = gsap.timeline({ defaults: { duration: 0.5 } });
 
 	menuBtnTL.fromTo(
 		"#menu-btn",

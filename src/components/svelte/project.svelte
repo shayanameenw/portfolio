@@ -11,7 +11,7 @@ useMount(() => {
 
 	const projectTimeline = gsap.timeline({
 		defaults: {
-			duration: 0.5,
+			duration: 0.35,
 		},
 		scrollTrigger: {
 			trigger: `#project-${item.id}`,

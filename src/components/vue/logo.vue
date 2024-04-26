@@ -8,7 +8,7 @@ const LOGO = "zedsols";
 const isMenuOpen = useStore(isMenuOpenStore);
 
 useEffect(() => {
-	const logoTL = gsap.timeline({ defaults: { stagger: 0.25 } });
+	const logoTL = gsap.timeline({ defaults: { stagger: 0.15 } });
 
 	logoTL.fromTo("#logo > span", { opacity: 0 }, { opacity: 1 });
 

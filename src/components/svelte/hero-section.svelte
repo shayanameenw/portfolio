@@ -30,7 +30,7 @@ useMount(() => {
 
 useEffect(() => {
 	const headingTL = gsap.timeline({
-		defaults: { duration: 0.75, stagger: 0.25, ease: "power3.inOut" },
+		defaults: { duration: 0.5, stagger: 0.15, ease: "power3.inOut" },
 	});
 
 	headingTL.fromTo(

@@ -6,9 +6,8 @@ import { projectsSection } from "~/content/projects-page.ts";
 
 useEffect(() => {
 	gsap.to(["#projects-heading", "#projects-paragraph"], {
-		ease: "power3.inOut",
-		duration: 0.75,
-		stagger: 0.25,
+    duration: 0.35,
+    stagger: 0.15,
 		opacity: 1,
 		y: 0,
 	});
