@@ -6,6 +6,7 @@ import { default as projectsPage } from "~/content/projects-page.ts";
 import { ctaSection } from "~/content/home-page.ts";
 
 useEffect(() => {
+  // @ts-ignore
 	gsap.registerPlugin(ScrollTrigger);
 
 	gsap.fromTo(
