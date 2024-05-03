@@ -4,9 +4,9 @@ import Autoplay from "embla-carousel-autoplay";
 import ClassNames from "embla-carousel-class-names";
 
 import { default as gsap } from "gsap";
-import { useEffect, useMount } from "~/hooks/core.svelte";
 import { tagline } from "~/content/common.ts";
 import { heroSection } from "~/content/home-page.ts";
+import { useEffect, useMount } from "~/hooks/core.svelte";
 
 useMount(() => {
 	const emblaNode = document.querySelector(".embla");

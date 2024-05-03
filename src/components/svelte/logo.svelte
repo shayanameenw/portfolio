@@ -1,7 +1,7 @@
 <script lang="ts">
+import { logoSpelling } from "~/content/common.ts";
 import { useStore } from "~/hooks/core.svelte";
 import { isMenuOpenStore } from "~/stores/menu";
-import { logoSpelling } from "~/content/common.ts";
 
 const { class: className, id }: { class?: string; id?: string } = $props();
 

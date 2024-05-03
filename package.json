@@ -13,29 +13,29 @@
 		"biome": "biome"
 	},
 	"dependencies": {
-		"@fontsource-variable/raleway": "^5.0.18",
-		"embla-carousel": "npm:embla-carousel@latest",
-		"embla-carousel-autoplay": "npm:embla-carousel-autoplay@latest",
-		"embla-carousel-class-names": "npm:embla-carousel-class-names@latest",
+		"@fontsource-variable/raleway": "latest",
+		"embla-carousel": "latest",
+		"embla-carousel-autoplay": "latest",
+		"embla-carousel-class-names": "latest",
 		"gsap": "npm:gsap@latest",
-		"lucide": "npm:lucide@latest",
-		"lucide-svelte": "npm:lucide-svelte@latest",
-		"lucide-vue-next": "npm:lucide-vue-next@latest",
-		"nanostores": "npm:nanostores@latest"
+		"lucide": "latest",
+		"lucide-svelte": "latest",
+		"lucide-vue-next": "latest",
+		"nanostores": "latest"
 	},
 	"devDependencies": {
-		"@astrojs/check": "npm:@astrojs/check@latest",
-		"@astrojs/svelte": "npm:@astrojs/svelte@latest",
-		"@astrojs/tailwind": "npm:@astrojs/tailwind@latest",
-		"@astrojs/vercel": "npm:@astrojs/vercel@latest",
-		"@astrojs/vue": "npm:@astrojs/vue@latest",
-		"@biomejs/biome": "^1.6.4",
-		"@types/node": "^20.12.7",
-		"astro": "npm:astro@latest",
-		"svelte": "npm:svelte@next",
-		"tailwindcss": "npm:tailwindcss@latest",
-		"typescript": "npm:typescript@latest",
-		"vue": "npm:vue@latest"
+		"@astrojs/check": "latest",
+		"@astrojs/svelte": "latest",
+		"@astrojs/tailwind": "latest",
+		"@astrojs/vercel": "latest",
+		"@astrojs/vue": "latest",
+		"@biomejs/biome": "latest",
+		"@types/node": "latest",
+		"astro": "latest",
+		"svelte": "next",
+		"tailwindcss": "latest",
+		"typescript": "latest",
+		"vue": "latest"
 	},
 	"packageManager": "pnpm@9.0.6"
 }

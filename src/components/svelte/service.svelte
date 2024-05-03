@@ -1,13 +1,15 @@
 <script lang='ts'>
-import { default as ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { default as gsap } from "gsap";
+import { default as ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useMount } from "~/hooks/core.svelte";
 
 // @ts-ignore
-const {	item}: { item: { id: number; name: string; images: [string, string] } } = $props();
+const {
+	item,
+}: { item: { id: number; name: string; images: [string, string] } } = $props();
 
 useMount(() => {
-  // @ts-ignore
+	// @ts-ignore
 	gsap.registerPlugin(ScrollTrigger);
 
 	const projectTimeline = gsap.timeline({
@@ -17,18 +19,18 @@ useMount(() => {
 		},
 	});
 
-  projectTimeline.to(`#service-${item.id}-name`, {
-    opacity: 1,
-    y: 0
-  });
+	projectTimeline.to(`#service-${item.id}-name`, {
+		opacity: 1,
+		y: 0,
+	});
 
 	projectTimeline.to(
-    `#service-${item.id}-img-0 > div`,
-    {
-      bottom: "100%",
-    },
-    "-=0.25",
-  );
+		`#service-${item.id}-img-0 > div`,
+		{
+			bottom: "100%",
+		},
+		"-=0.25",
+	);
 
 	projectTimeline.to(
 		`#service-${item.id}-img-1 > div`,

@@ -1,8 +1,8 @@
 <script lang="ts">
 import gsap from "gsap";
+import { servicesSection } from "~/content/services-page.ts";
 import { useEffect } from "~/hooks/core.svelte";
 import { default as Service } from "./service.svelte";
-import { servicesSection } from "~/content/services-page.ts";
 
 useEffect(() => {
 	gsap.to(["#services-heading", "#services-paragraph"], {

@@ -1,13 +1,13 @@
 <script lang="ts">
 import { default as gsap } from "gsap";
-import { useEffect } from "~/hooks/core.svelte";
-import { contactSection } from "~/content/contact-page.ts";
 import { socialLinks } from "~/content/common.ts";
+import { contactSection } from "~/content/contact-page.ts";
+import { useEffect } from "~/hooks/core.svelte";
 
 useEffect(() => {
 	gsap.to(["#contact-heading", "#contact-info", "#contact-paragraph"], {
-    duration: 0.35,
-    stagger: 0.15,
+		duration: 0.35,
+		stagger: 0.15,
 		opacity: 1,
 		y: 0,
 	});

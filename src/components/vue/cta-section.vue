@@ -1,12 +1,12 @@
 <script setup lang='ts'>
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useEffect } from "~/hooks/core.vue";
-import { default as projectsPage } from "~/content/projects-page.ts";
 import { ctaSection } from "~/content/home-page.ts";
+import { default as projectsPage } from "~/content/projects-page.ts";
+import { useEffect } from "~/hooks/core.vue";
 
 useEffect(() => {
-  // @ts-ignore
+	// @ts-ignore
 	gsap.registerPlugin(ScrollTrigger);
 
 	gsap.fromTo(

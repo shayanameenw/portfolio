@@ -1,9 +1,9 @@
 <script lang="ts">
 import gsap from "gsap";
 import Logo from "~/components/svelte/logo.svelte";
+import { pagesLinks, socialLinks, tagline } from "~/content/common.ts";
 import { useEffect, useStore } from "~/hooks/core.svelte";
 import { isMenuOpenStore } from "~/stores/menu";
-import { pagesLinks, socialLinks, tagline } from "~/content/common.ts";
 
 const isMenuOpen = useStore(isMenuOpenStore);
 

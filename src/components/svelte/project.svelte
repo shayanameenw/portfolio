@@ -4,10 +4,11 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { useMount } from "~/hooks/core.svelte";
 
 // @ts-ignore
-const { item }: { item: { id: number; label: string; image: string } } = $props();
+const { item }: { item: { id: number; label: string; image: string } } =
+	$props();
 
 useMount(() => {
-  // @ts-ignore
+	// @ts-ignore
 	gsap.registerPlugin(ScrollTrigger);
 
 	const projectTimeline = gsap.timeline({

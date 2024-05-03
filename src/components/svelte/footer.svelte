@@ -9,9 +9,9 @@ import {
 	TwitterIcon,
 } from "lucide-svelte";
 import { default as Logo } from "~/components/svelte/logo.svelte";
-import { useEffect } from "~/hooks/core.svelte";
-import { highlightProjectsLinks, socialLinks } from "~/content/common.ts";
 import { pagesLinks } from "~/content/common.js";
+import { highlightProjectsLinks, socialLinks } from "~/content/common.ts";
+import { useEffect } from "~/hooks/core.svelte";
 
 useEffect(() => {
 	// @ts-ignore
@@ -19,8 +19,8 @@ useEffect(() => {
 
 	const footerTL = gsap.timeline({
 		defaults: {
-      duration: 0.35,
-      stagger: 0.15,
+			duration: 0.35,
+			stagger: 0.15,
 		},
 		scrollTrigger: {
 			trigger: "footer",

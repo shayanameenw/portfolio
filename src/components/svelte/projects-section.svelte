@@ -1,13 +1,13 @@
 <script lang="ts">
 import gsap from "gsap";
+import { projectsSection } from "~/content/projects-page.ts";
 import { useEffect } from "~/hooks/core.svelte";
 import Project from "./project.svelte";
-import { projectsSection } from "~/content/projects-page.ts";
 
 useEffect(() => {
 	gsap.to(["#projects-heading", "#projects-paragraph"], {
-    duration: 0.35,
-    stagger: 0.15,
+		duration: 0.35,
+		stagger: 0.15,
 		opacity: 1,
 		y: 0,
 	});
