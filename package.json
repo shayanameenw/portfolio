@@ -13,29 +13,27 @@
 		"biome": "biome"
 	},
 	"dependencies": {
-		"@fontsource-variable/raleway": "latest",
-		"embla-carousel": "latest",
-		"embla-carousel-autoplay": "latest",
-		"embla-carousel-class-names": "latest",
-		"gsap": "npm:gsap@latest",
-		"lucide": "latest",
-		"lucide-svelte": "latest",
-		"lucide-vue-next": "latest",
-		"nanostores": "latest"
-	},
-	"devDependencies": {
 		"@astrojs/check": "latest",
 		"@astrojs/svelte": "latest",
 		"@astrojs/tailwind": "latest",
 		"@astrojs/vercel": "latest",
 		"@astrojs/vue": "latest",
 		"@biomejs/biome": "latest",
+		"@fontsource-variable/raleway": "latest",
 		"@types/node": "latest",
 		"astro": "latest",
+		"embla-carousel-autoplay": "latest",
+		"embla-carousel-class-names": "latest",
+		"embla-carousel": "latest",
+		"gsap": "latest",
+		"lucide-svelte": "latest",
+		"lucide-vue-next": "latest",
+		"lucide": "latest",
+		"nanostores": "latest",
 		"svelte": "next",
 		"tailwindcss": "latest",
 		"typescript": "latest",
 		"vue": "latest"
 	},
-	"packageManager": "pnpm@9.0.6"
+	"packageManager": "pnpm@9.1.0"
 }
